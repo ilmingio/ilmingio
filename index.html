@@ -1,0 +1,880 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0a6b5c" />
+    <title>ilming — AI-Powered Quran Learning &amp; Islamic LMS for Tahfiz Institutes</title>
+    <meta
+      name="description"
+      content="ilming is one platform for Tahfiz institutes, madrassas, and Islamic schools — Hifz tracking, Virtual Ustadh AI practice, attendance, exams, families, fees, live classes, and guardian reports. UK, UAE, India &amp; GCC."
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://ilming.io/" />
+    <meta property="og:site_name" content="ilming" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ilming.io/" />
+    <meta property="og:title" content="ilming — AI-Powered Quran Learning &amp; Islamic LMS" />
+    <meta property="og:description" content="One platform for Tahfiz institutes, madrassas, and Islamic schools — Hifz tracking, Virtual Ustadh AI practice, exams, fees, and guardian visibility." />
+    <meta property="og:image" content="https://ilming.io/assets/images/og/ilming-og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="ilming — Islamic LMS and Virtual Ustadh for Tahfiz institutes" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="ilming — AI-Powered Quran Learning &amp; Islamic LMS" />
+    <meta name="twitter:description" content="Hifz tracking, Virtual Ustadh AI practice, exams, fees, and guardian reports — one platform for Tahfiz institutes and madrassas." />
+    <meta name="twitter:image" content="https://ilming.io/assets/images/og/ilming-og.png" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"ilming","url":"https://ilming.io","logo":"https://ilming.io/assets/images/logo/ilming_logo.svg","description":"AI-powered Quran learning and Islamic LMS for Tahfiz institutes, madrassas, and Islamic schools.","areaServed":["GB","AE","IN","SA","QA","KW","BH","OM"]}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"ilming","applicationCategory":"EducationalApplication","operatingSystem":"Web, iOS, Android","url":"https://ilming.io","description":"Islamic LMS with Virtual Ustadh AI Quran practice, Hifz tracking, exams, fees, live classes, and guardian portal.","offers":{"@type":"Offer","price":"999","priceCurrency":"INR","description":"Plans from Basic; 14-day trial available"},"provider":{"@type":"Organization","name":"ilming","url":"https://ilming.io"}}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"ilming","url":"https://ilming.io","description":"Islamic LMS and AI-guided Quran practice for Tahfiz institutes and madrassas.","publisher":{"@type":"Organization","name":"ilming"}}</script>
+                <link rel="icon" href="assets/images/favicon/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="assets/images/favicon/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="assets/images/favicon/site.webmanifest" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="ilming" />
+    <meta name="mobile-web-app-capable" content="yes" /><link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cormorant+Garamond:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/site.css?v=20260815" />
+  </head>
+  <body>
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-W6FCQMT3"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+                <div class="scroll-indicator" id="scrollIndicator"></div>
+
+    <div class="site-announcement" id="siteAnnouncement" role="region" aria-label="Announcement">
+      <div class="site-announcement__inner">
+        <p class="site-announcement__text">
+          <strong>Virtual Ustadh</strong> + full Islamic LMS — Tahfiz · Hifz · Academy · UK · UAE · India · GCC
+        </p>
+        <a href="/contact/" class="site-announcement__link">Book a demo</a>
+        <button type="button" class="site-announcement__dismiss" id="announceDismiss" aria-label="Dismiss announcement">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <header class="site-nav" id="navbar">
+      <div class="nav-inner">
+        <a href="/" class="brand">
+          <img src="assets/images/logo/ilming_icon-mark.svg?v=20260602" alt="" class="brand__icon brand__icon--mark" width="44" height="44" aria-hidden="true" />
+          <span class="brand__lockup">
+            <span class="brand__name">ilming</span>
+            <span class="brand__tagline">Islamic LMS Platform</span>
+          </span>
+        </a>
+        <ul class="nav-links nav-desktop-only">
+          <li><a href="/platform/">Platform</a></li>
+          <li><a href="/features/">Features</a></li>
+          <li><a href="/ai/">AI</a></li>
+          <li><a href="/pricing/">Pricing</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+        <div class="nav-actions nav-desktop-only">
+          <a href="/login" class="nav-btn nav-btn-outline" data-app-link="/login">Log in</a>
+          <a href="/contact/" class="nav-btn nav-btn-primary">Book a demo</a>
+        </div>
+        <button type="button" class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+          <svg class="menu-toggle__icon menu-toggle__icon--open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          <svg class="menu-toggle__icon menu-toggle__icon--close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+    </header>
+    <button type="button" class="mobile-nav-backdrop" id="navBackdrop" aria-label="Close menu" tabindex="-1"></button>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Main menu">
+      <span class="mobile-nav__label">Menu</span>
+      <a href="/platform/">Platform</a>
+      <a href="/features/">Features</a>
+      <a href="/ai/">AI</a>
+      <a href="/pricing/">Pricing</a>
+      <a href="/blog/">Blog</a>
+      <a href="/about/">About</a>
+      <a href="/contact/">Contact</a>
+      <a href="/login" class="nav-btn nav-btn-outline" data-app-link="/login">Log in</a>
+      <a href="/contact/" class="nav-btn nav-btn-primary">Book a demo</a>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero hero--product">
+      <div class="hero-glow hero-glow--1" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow--2" aria-hidden="true"></div>
+      <div class="hero-product-grid">
+        <div class="hero-content">
+          <p class="hero-brand-mark" aria-hidden="false">ilming</p>
+          <h1>One platform for Tahfiz institutes, madrassas &amp; Islamic schools</h1>
+          <p class="lead">
+            Hifz tracking with Quran map &amp; goals, Virtual Ustadh AI practice, attendance, exams, families, fees, live classes, and guardian reports — one stack for institutes, teachers, students, and parents.
+          </p>
+          <div class="hero-cta-row">
+            <a href="/contact/" class="cta-button gold">Book a demo</a>
+            <a href="/login" class="cta-button secondary" data-app-link="/login">Institute log in</a>
+          </div>
+          <p class="hero-proof">Teacher assigns → Student records → AI screens → Teacher approves → Parent sees</p>
+          <p class="hero-proof" style="margin-top: 0.45rem; text-transform: none; letter-spacing: 0; font-weight: 500">
+            <a href="/present/" style="color: var(--gold-light); font-weight: 700">Open the 10-minute product tour →</a>
+          </p>
+        </div>
+        <div class="hero-stage" aria-label="Product screenshots">
+          <div class="hero-stage__browser reveal">
+            <div class="browser-chrome" aria-hidden="true">
+              <span></span><span></span><span></span>
+              <div class="browser-chrome__url">app.ilming.io</div>
+            </div>
+            <img
+              src="assets/images/product/crm-institute-dashboard.png"
+              alt="ilming institute dashboard — students, reviews, attendance, and fee collection"
+              width="1200"
+              height="750"
+              fetchpriority="high"
+            />
+          </div>
+          <div class="hero-stage__phone reveal">
+            <img
+              src="assets/images/product/mobile-virtual-ustadh.png"
+              alt="ilming Virtual Ustadh mobile app — student recording Al-Mulk ayah with AI-guided practice"
+              width="900"
+              height="1600"
+              fetchpriority="high"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="trust-strip">
+      <div class="trust-strip__inner">
+        <span class="trust-strip__label">Built for</span>
+        <ul class="trust-strip__items">
+          <li>Tahfiz institutes</li>
+          <li>Madrassas</li>
+          <li>Islamic schools</li>
+          <li>Weekend &amp; Hifz programmes</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- CORE LOOP -->
+    <section class="section loop-section">
+      <div class="container">
+        <span class="section-eyebrow">The core loop</span>
+        <h2 class="section-title">From assignment to parent visibility — in one flow</h2>
+        <p class="section-subtitle">
+          AI assists with routine screening. Your ustadh keeps the final decision. Families see the same truth.
+        </p>
+        <ol class="loop-track">
+          <li class="loop-step reveal">
+            <span class="loop-step__num">01</span>
+            <h3>Assign</h3>
+            <p>Teacher sets surah &amp; ayah portions by batch with due dates.</p>
+          </li>
+          <li class="loop-step reveal">
+            <span class="loop-step__num">02</span>
+            <h3>Record</h3>
+            <p>Student practices with Virtual Ustadh and submits recitation audio.</p>
+          </li>
+          <li class="loop-step reveal">
+            <span class="loop-step__num">03</span>
+            <h3>AI gate</h3>
+            <p>Transcript screening scores the attempt before it reaches the queue.</p>
+          </li>
+          <li class="loop-step reveal">
+            <span class="loop-step__num">04</span>
+            <h3>Approve</h3>
+            <p>Teacher plays audio, reviews issues, approves or requests re-record.</p>
+          </li>
+          <li class="loop-step reveal">
+            <span class="loop-step__num">05</span>
+            <h3>Parent sees</h3>
+            <p>Guardians get practice status, weekly AI report, and term progress.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- VIRTUAL USTADH -->
+    <section class="ustadh-section" id="virtual-ustadh">
+      <div class="ustadh-section__grid">
+        <div class="ustadh-section__copy reveal">
+          <span class="section-eyebrow section-eyebrow--on-dark">Student mobile</span>
+          <h2>Virtual Ustadh — AI-guided Quran practice on the phone</h2>
+          <p>
+            Students open an assignment, listen, record, and get instant coaching on Madd and Tajweed cues —
+            then the attempt waits for teacher approval. Same institute login as the web LMS.
+          </p>
+          <ul class="ustadh-points">
+            <li>Live waveform, status pill, Madd meter, and score ring during practice</li>
+            <li>Arabic ayah panel with Madd highlighting</li>
+            <li>Hifz desk: Map · Practice · Progress · Goals · Revision · History</li>
+            <li>Academy: lessons, exams, attendance, fees, live classes, certificates, study plan</li>
+            <li>Class batch chat, notifications, and learning insights on Home</li>
+          </ul>
+          <div class="academy-tabs" aria-label="Student app tabs">
+            <span class="academy-tab">Home <span>practice + insights</span></span>
+            <span class="academy-tab">Hifz <span>map &amp; goals</span></span>
+            <span class="academy-tab">Academy <span>full LMS</span></span>
+            <span class="academy-tab">More <span>reports &amp; settings</span></span>
+          </div>
+          <div class="hero-cta-row" style="justify-content: flex-start; margin-top: 1.5rem">
+            <a href="/present/" class="cta-button gold">10-min product tour</a>
+            <a href="/ai/" class="cta-button secondary">Explore ilming AI</a>
+          </div>
+        </div>
+        <div class="ustadh-section__media reveal">
+          <div class="ustadh-video">
+            <video
+              controls
+              playsinline
+              preload="metadata"
+              poster="assets/images/product/ustadh-poster.jpg"
+              aria-label="Virtual Ustadh demo video"
+            >
+              <source src="assets/video/product/ustadh-demo.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="ustadh-phones">
+            <img
+              src="assets/images/product/mobile-virtual-ustadh.png"
+              alt="Virtual Ustadh practice screen — recording Al-Mulk"
+              width="450"
+              height="800"
+              loading="lazy"
+              class="ustadh-phones__main"
+            />
+            <img
+              src="assets/images/product/mobile-hifz-home.png"
+              alt="ilming student app home — continue practice and Hifz desk"
+              width="450"
+              height="800"
+              loading="lazy"
+              class="ustadh-phones__alt"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCT SHOTS -->
+    <section class="section shots-section">
+      <div class="container">
+        <span class="section-eyebrow">See the product</span>
+        <h2 class="section-title">Web CRM for institutes · Mobile for students &amp; guardians</h2>
+        <p class="section-subtitle">
+          Real surfaces from the live stack — Tahfiz review desk, institute overview, and guardian Quran progress.
+        </p>
+
+        <figure class="shot-feature reveal">
+          <div class="browser-frame">
+            <div class="browser-chrome" aria-hidden="true">
+              <span></span><span></span><span></span>
+              <div class="browser-chrome__url">app.ilming.io/teacher/tahfiz</div>
+            </div>
+            <img
+              src="assets/images/product/crm-tahfiz-review.png"
+              alt="Teacher Tahfiz review desk — pending recitations with AI summary and approve actions"
+              width="1400"
+              height="875"
+              loading="lazy"
+            />
+          </div>
+          <figcaption>
+            <strong>Teacher review desk</strong>
+            Play student recordings, read the AI summary, approve or request a re-record — approval stays with the ustadh.
+          </figcaption>
+        </figure>
+
+        <div class="shot-pair">
+          <figure class="shot-tile reveal">
+            <div class="browser-frame">
+              <div class="browser-chrome" aria-hidden="true">
+                <span></span><span></span><span></span>
+                <div class="browser-chrome__url">app.ilming.io</div>
+              </div>
+              <img
+                src="assets/images/product/crm-institute-dashboard.png"
+                alt="Institute overview dashboard with Hifz KPIs and weekly progress"
+                width="1400"
+                height="875"
+                loading="lazy"
+              />
+            </div>
+            <figcaption>
+              <strong>Institute overview</strong>
+              Attendance, pending reviews, fee collection, and weekly Hifz trends in one desk.
+            </figcaption>
+          </figure>
+          <figure class="shot-tile reveal">
+            <div class="browser-frame">
+              <div class="browser-chrome" aria-hidden="true">
+                <span></span><span></span><span></span>
+                <div class="browser-chrome__url">app.ilming.io/guardian</div>
+              </div>
+              <img
+                src="assets/images/product/crm-guardian-progress.png"
+                alt="Guardian Quran progress — practice status, weekly AI report, term progress"
+                width="1400"
+                height="875"
+                loading="lazy"
+              />
+            </div>
+            <figcaption>
+              <strong>Guardian progress</strong>
+              Parents hear the same recordings and get weekly AI and term reports — without calling the office.
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROLES -->
+    <section class="section section-alt">
+      <div class="container">
+        <span class="section-eyebrow">Role portals</span>
+        <h2 class="section-title">Every stakeholder works in the same system</h2>
+        <p class="section-subtitle">
+          Separate portals for institute admin, teachers, students, and guardians — connected through one multi-tenant API.
+        </p>
+        <div class="role-rail">
+          <article class="role-panel reveal">
+            <span class="role-panel__role">Institute</span>
+            <h3>Run the full institute from one desk</h3>
+            <ul>
+              <li>Bulk import students, batches, families &amp; teachers</li>
+              <li>Monitor Tahfiz KPIs, attendance, teacher tracking &amp; fees</li>
+              <li>Pay teachers, publish results, and issue certificates</li>
+            </ul>
+          </article>
+          <article class="role-panel reveal">
+            <span class="role-panel__role">Teacher</span>
+            <h3>Teach and review without switching tools</h3>
+            <ul>
+              <li>Daily Hifz sheet, assign portions &amp; clear the review queue</li>
+              <li>Mark attendance (live class, lesson, exam, Quran)</li>
+              <li>Run exams, live sessions, and track earnings</li>
+            </ul>
+          </article>
+          <article class="role-panel reveal">
+            <span class="role-panel__role">Student</span>
+            <h3>Know what to practise and submit on time</h3>
+            <ul>
+              <li>Virtual Ustadh guided practice on iOS &amp; Android</li>
+              <li>Quran map, goals, Muraja&apos;a plan &amp; history</li>
+              <li>Lessons, exams, attendance, fees &amp; certificates</li>
+            </ul>
+          </article>
+          <article class="role-panel reveal">
+            <span class="role-panel__role">Guardian</span>
+            <h3>Stay informed without visiting the office</h3>
+            <ul>
+              <li>Daily Hifz updates, weekly AI report &amp; term progress</li>
+              <li>Play approved recordings and see attendance</li>
+              <li>Fee status, reminders, and online payments</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- THREE SURFACES -->
+    <section class="section">
+      <div class="container">
+        <span class="section-eyebrow">One stack</span>
+        <h2 class="section-title">Web CRM, student app, guardian app — same institute</h2>
+        <p class="section-subtitle">
+          app.ilming.io for staff, native iOS &amp; Android for students and parents, all talking to the same API.
+        </p>
+        <div class="surface-grid">
+          <article class="surface-card surface-card--crm reveal">
+            <span class="surface-card__kicker">app.ilming.io</span>
+            <h3>Institute &amp; teacher CRM</h3>
+            <p>Role portals for platform admin, institute, teacher, student, and guardian — with Arabic RTL.</p>
+            <ul>
+              <li>Tahfiz review desk, daily Hifz sheet, Muraja&apos;a planner</li>
+              <li>Courses, batches, families, bulk import</li>
+              <li>Exams, verification, results, certificates</li>
+              <li>Attendance, fees, teacher tracking, payouts</li>
+            </ul>
+          </article>
+          <article class="surface-card surface-card--student reveal">
+            <span class="surface-card__kicker">iOS &amp; Android</span>
+            <h3>Student mobile</h3>
+            <p>Virtual Ustadh practice plus the full Academy LMS on the same login as the web app.</p>
+            <ul>
+              <li>Home: continue practice, insights, notifications</li>
+              <li>Hifz: Map · Practice · Progress · Goals · Revision · History</li>
+              <li>Academy: lessons, exams, attendance, fees, live, certificates</li>
+              <li>Class chat, study plan, enrollment, Razorpay pay</li>
+            </ul>
+          </article>
+          <article class="surface-card surface-card--guardian reveal">
+            <span class="surface-card__kicker">Web + mobile</span>
+            <h3>Guardian portal</h3>
+            <p>Parents see the same truth as teachers — without calling the office.</p>
+            <ul>
+              <li>Quran progress, weekly AI report, term report</li>
+              <li>Daily updates and playable approved recordings</li>
+              <li>Attendance across live class, lessons, exams, Quran</li>
+              <li>Family view, fee status, and online payments</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- LMS CAPABILITIES -->
+    <section class="section section-alt">
+      <div class="container">
+        <span class="section-eyebrow">Full Islamic LMS</span>
+        <h2 class="section-title">Beyond Hifz — everything your institute runs daily</h2>
+        <p class="section-subtitle">
+          Tahfiz sits inside the same LMS as attendance, families, exams, fees, live classes, and certificates — not a separate tool.
+        </p>
+        <div class="capability-grid">
+          <article class="capability reveal">
+            <div class="capability__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 19V5a1 1 0 011-1h6l2 2h6a1 1 0 011 1v12a1 1 0 01-1 1H5a1 1 0 01-1-1z"/><path d="M8 11h8M8 15h5"/></svg>
+            </div>
+            <h3>Secure online exams</h3>
+            <p>Question banks, integrity controls, auto results, and graphs for Islamic studies and academic subjects.</p>
+          </article>
+          <article class="capability reveal">
+            <div class="capability__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+            </div>
+            <h3>Students &amp; batches</h3>
+            <p>Enrol learners, assign teachers, organise Hifz circles and class batches with role-based access.</p>
+          </article>
+          <article class="capability reveal">
+            <div class="capability__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+            </div>
+            <h3>Fees &amp; teacher payouts</h3>
+            <p>Assign fees, collect via Razorpay, send reminders, download PDF receipts. Institutes pay tutors from the same desk.</p>
+          </article>
+          <article class="capability reveal">
+            <div class="capability__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+            </div>
+            <h3>Live classes</h3>
+            <p>Schedule per batch with Google Meet, Zoom, or custom links — email reminders go out automatically.</p>
+          </article>
+          <article class="capability reveal">
+            <div class="capability__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/><path d="M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"/></svg>
+            </div>
+            <h3>Attendance</h3>
+            <p>Present, absent, late, excused — plus live class, lesson, exam, and Quran practice attendance students can see.</p>
+          </article>
+          <article class="capability reveal">
+            <div class="capability__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 15l-3 6 9-12h-6l3-6-9 12h6z"/></svg>
+            </div>
+            <h3>Certificates</h3>
+            <p>Arabic-capable digital certificates for Hifz milestones and course completion — with public verification.</p>
+          </article>
+          <article class="capability reveal">
+            <div class="capability__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+            </div>
+            <h3>Families</h3>
+            <p>Link guardians to children, share one family view, and notify households without juggling chat groups.</p>
+          </article>
+          <article class="capability reveal">
+            <div class="capability__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z"/><path d="M2 12h20M12 2a15 15 0 010 20M12 2a15 15 0 000 20"/></svg>
+            </div>
+            <h3>Arabic RTL &amp; 10 languages</h3>
+            <p>English, Arabic, Urdu, Spanish, French, Malay, Swahili, Hindi, Malayalam, Tamil — staff and parents choose.</p>
+          </article>
+        </div>
+        <p class="home-teaser">
+          <a href="/platform/" class="cta-button">Explore the platform</a>
+          <a href="/demo-platform/" class="text-link" style="margin-left: 1.25rem">Architecture &amp; demo guide →</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <span class="section-eyebrow">Daily operations</span>
+        <h2 class="section-title">The institute work the LMS actually covers</h2>
+        <p class="section-subtitle">
+          Live in the CRM and API today — not a roadmap slide.
+        </p>
+        <div class="ops-grid">
+          <article class="ops-item reveal">
+            <h3>Daily Hifz sheet</h3>
+            <p>Teachers open a batch roster, log Sabk &amp; Muraja&apos;a, and evaluate the same day.</p>
+          </article>
+          <article class="ops-item reveal">
+            <h3>Smart Muraja&apos;a</h3>
+            <p>Spaced revision planner with accept-suggestion flow so weak Juz get time, not leftovers.</p>
+          </article>
+          <article class="ops-item reveal">
+            <h3>At-risk students</h3>
+            <p>Hifz health and at-risk lists so institutes see who is slipping before parents call.</p>
+          </article>
+          <article class="ops-item reveal">
+            <h3>Teacher tracking</h3>
+            <p>Oversight on live classes started, student presence, and reply time — green / amber layers.</p>
+          </article>
+          <article class="ops-item reveal">
+            <h3>Bulk import</h3>
+            <p>Bring in students, teachers, and batches instead of typing every row by hand.</p>
+          </article>
+          <article class="ops-item reveal">
+            <h3>Exam verification</h3>
+            <p>Staff review attempts, integrity flags, and publish results when the paper is clean.</p>
+          </article>
+          <article class="ops-item reveal">
+            <h3>Notify families</h3>
+            <p>Institute broadcasts to guardians — in-app, email, and push — without a side chat group.</p>
+          </article>
+          <article class="ops-item reveal">
+            <h3>Teacher payouts</h3>
+            <p>Institute pays tutors; teachers see earnings. Razorpay payouts where configured.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="integrations-strip">
+      <div class="integrations-strip__inner">
+        <p class="integrations-strip__label">Works with tools institutes already use</p>
+        <div class="integrations-row">
+          <span class="integration-chip">Razorpay</span>
+          <span class="integration-chip">Zoom</span>
+          <span class="integration-chip">Google Meet</span>
+          <span class="integration-chip">Email &amp; push</span>
+          <span class="integration-chip">Firebase FCM</span>
+          <span class="integration-chip">OpenAI</span>
+          <span class="integration-chip">Google sign-in</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- AUDIENCE -->
+    <section class="section section-alt">
+      <div class="container">
+        <span class="section-eyebrow">Who we serve</span>
+        <h2 class="section-title">Built for how Islamic institutes actually operate</h2>
+        <div class="audience-grid audience-grid--tight">
+          <article class="audience-card audience-card--clean reveal">
+            <h3>Tahfiz institutes</h3>
+            <p>Hifz circles, recitation review, Tahfiz attendance, and parent reports — not generic school software.</p>
+          </article>
+          <article class="audience-card audience-card--clean reveal">
+            <h3>Madrassas</h3>
+            <p>Islamic studies classes, exam banks, weekend programmes, and guardian updates in one workspace.</p>
+          </article>
+          <article class="audience-card audience-card--clean reveal">
+            <h3>Islamic schools</h3>
+            <p>Multi-subject courses, secure assessments, certificates, and white-label branding under your institute.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- REGIONS -->
+    <section class="section">
+      <div class="container">
+        <span class="section-eyebrow">Global reach</span>
+        <h2 class="section-title">Operating where Islamic education matters</h2>
+        <p class="section-subtitle">
+          Regional billing, Arabic RTL, and white-label branding for institutes across the UK, UAE, India, and the GCC.
+        </p>
+        <div class="region-row">
+          <span class="region-pill">United Kingdom</span>
+          <span class="region-pill">UAE</span>
+          <span class="region-pill">India</span>
+          <span class="region-pill">GCC &amp; beyond</span>
+        </div>
+        <div class="lang-row" aria-label="Interface languages">
+          <span class="lang-pill">English</span>
+          <span class="lang-pill">العربية</span>
+          <span class="lang-pill">اردو</span>
+          <span class="lang-pill">Español</span>
+          <span class="lang-pill">Français</span>
+          <span class="lang-pill">Bahasa Melayu</span>
+          <span class="lang-pill">Kiswahili</span>
+          <span class="lang-pill">हिन्दी</span>
+          <span class="lang-pill">മലയാളം</span>
+          <span class="lang-pill">தமிழ்</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- STEPS -->
+    <section class="section section-alt">
+      <div class="container">
+        <span class="section-eyebrow">Getting started</span>
+        <h2 class="section-title">Live in three steps</h2>
+        <p class="section-subtitle">Most institutes onboard in under a week with demo data you can wipe.</p>
+        <div class="steps-grid">
+          <div class="step-card reveal">
+            <div class="step-num">1</div>
+            <h3>Request a pilot</h3>
+            <p>We set up your institute admin, plan, branding, and optional white-label subdomain.</p>
+          </div>
+          <div class="step-card reveal">
+            <div class="step-num">2</div>
+            <h3>Import students &amp; batches</h3>
+            <p>Add Hifz circles, teachers, and guardians. Upload materials and assign first portions.</p>
+          </div>
+          <div class="step-card reveal">
+            <div class="step-num">3</div>
+            <h3>Run review &amp; collect fees</h3>
+            <p>Students practise on mobile, teachers clear the queue, parents see progress — fees online.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING TEASER -->
+    <section class="section">
+      <div class="container" style="text-align: center">
+        <h2 class="section-title">Plans from ₹999 / month</h2>
+        <p class="section-subtitle">
+          14-day trial on all plans. UK &amp; UAE enterprise pricing available — compare limits and regional billing.
+        </p>
+        <a href="/pricing/" class="cta-button">View pricing</a>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-faq section-alt" id="faq">
+      <div class="container">
+        <div class="faq-header">
+          <h2 class="section-title">Frequently asked questions</h2>
+          <p class="section-subtitle">Straight answers for institute owners evaluating an Islamic LMS.</p>
+        </div>
+        <div class="faq-list" data-faq-accordion>
+          <div class="faq-item">
+            <h3 class="faq-item__heading">
+              <button type="button" class="faq-trigger" id="faq-home-1" aria-expanded="false" aria-controls="faq-panel-home-1">
+                <span class="faq-trigger__text">What is ilming?</span>
+                <span class="faq-trigger__icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq-panel" id="faq-panel-home-1" role="region" aria-labelledby="faq-home-1" hidden>
+              <div class="faq-panel__inner">
+                <div class="faq-panel__content">
+                  <p>
+                    ilming is an Islamic Learning Management System with AI-guided Quran practice —
+                    one platform at <strong>ilming.io</strong> for Tahfiz institutes, madrassas, and Islamic schools.
+                    Manage Hifz tracking, Virtual Ustadh practice, attendance, families, exams, fees, live classes, and guardian communication.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-item__heading">
+              <button type="button" class="faq-trigger" id="faq-home-2" aria-expanded="false" aria-controls="faq-panel-home-2">
+                <span class="faq-trigger__text">Does AI replace the teacher?</span>
+                <span class="faq-trigger__icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq-panel" id="faq-panel-home-2" role="region" aria-labelledby="faq-home-2" hidden>
+              <div class="faq-panel__inner">
+                <div class="faq-panel__content">
+                  <p>
+                    No. AI screens routine recitation attempts so teachers spend time on real review decisions.
+                    Approve and re-record always stay with the ustadh. Core LMS works fully without AI enabled.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-item__heading">
+              <button type="button" class="faq-trigger" id="faq-home-3" aria-expanded="false" aria-controls="faq-panel-home-3">
+                <span class="faq-trigger__text">Is there a student mobile app?</span>
+                <span class="faq-trigger__icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq-panel" id="faq-panel-home-3" role="region" aria-labelledby="faq-home-3" hidden>
+              <div class="faq-panel__inner">
+                <div class="faq-panel__content">
+                  <p>
+                    Yes. The ilming student app includes Virtual Ustadh practice, the Hifz desk
+                    (Map · Practice · Progress · Goals · Revision · History), Academy
+                    (lessons, exams, attendance, fees, live meetings, certificates, study plan,
+                    class chat), and guardian mode for parents — same login as the web LMS.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-item__heading">
+              <button type="button" class="faq-trigger" id="faq-home-4" aria-expanded="false" aria-controls="faq-panel-home-4">
+                <span class="faq-trigger__text">Do you support Arabic and RTL?</span>
+                <span class="faq-trigger__icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq-panel" id="faq-panel-home-4" role="region" aria-labelledby="faq-home-4" hidden>
+              <div class="faq-panel__inner">
+                <div class="faq-panel__content">
+                  <p>
+                    Yes — 10 languages including Arabic and Urdu with RTL layouts. Certificates support Arabic fonts,
+                    and Tahfiz screens are designed for Arabic-first workflows.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-item__heading">
+              <button type="button" class="faq-trigger" id="faq-home-5" aria-expanded="false" aria-controls="faq-panel-home-5">
+                <span class="faq-trigger__text">How do fees and teacher payouts work?</span>
+                <span class="faq-trigger__icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq-panel" id="faq-panel-home-5" role="region" aria-labelledby="faq-home-5" hidden>
+              <div class="faq-panel__inner">
+                <div class="faq-panel__content">
+                  <p>
+                    Institutes assign fees per batch, send reminders, and collect online with
+                    <strong>Razorpay</strong>. Students and guardians pay from web or mobile and
+                    download PDF receipts. Institutes can pay teachers from the payouts desk;
+                    tutors see earnings. UK/GCC enterprise billing is invoiced in GBP, AED, or SAR.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-item__heading">
+              <button type="button" class="faq-trigger" id="faq-home-6" aria-expanded="false" aria-controls="faq-panel-home-6">
+                <span class="faq-trigger__text">How do we get started?</span>
+                <span class="faq-trigger__icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq-panel" id="faq-panel-home-6" role="region" aria-labelledby="faq-home-6" hidden>
+              <div class="faq-panel__inner">
+                <div class="faq-panel__content">
+                  <p>
+                    Request a <a href="/contact/">14-day pilot</a> or book a demo. We provision your institute admin,
+                    branding, and demo batches — most institutes go live in under a week.
+                    See the <a href="/demo-platform/">platform flow guide</a> for a full walkthrough.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="faq-footer">
+          Still have questions? <a href="/contact/">Contact us</a> or <a href="/contact/">book a demo</a>.
+        </p>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container">
+        <h2>Ready to modernise your institute?</h2>
+        <p>Book a 15-minute walkthrough of Tahfiz + Virtual Ustadh, or start a 14-day trial with your own admin account.</p>
+        <div class="cta-buttons">
+          <a href="/contact/" class="cta-button gold">Request a demo</a>
+          <a href="/contact/" class="cta-button secondary">Start 14-day pilot</a>
+        </div>
+      </div>
+    </section>
+
+                <footer class="site-footer">
+      <div class="footer-cta">
+        <div class="container footer-cta__inner">
+          <div class="footer-cta__copy">
+            <h3>Questions about your institute?</h3>
+            <p>Book a demo or start a 14-day pilot — we'll set up your admin account.</p>
+          </div>
+          <div class="footer-cta__actions">
+            <a href="/contact/" class="cta-button gold">Book a demo</a>
+            <a href="/pricing/" class="cta-button secondary footer-cta__secondary">View pricing</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-main">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="/" class="brand brand--footer">
+              <img src="assets/images/logo/ilming_icon.svg?v=20260602" alt="" class="brand__icon" width="44" height="44" aria-hidden="true" />
+              <span class="brand__lockup">
+                <span class="brand__name">ilming</span>
+                <span class="brand__tagline">Islamic LMS Platform</span>
+              </span>
+            </a>
+            <p>
+              AI-powered Quran learning and Islamic LMS for Tahfiz institutes, madrassas, and
+              Islamic schools — Hifz tracking, Virtual Ustadh, exams, fees, and guardian visibility.
+            </p>
+            <div class="footer-regions" aria-label="Regions served">
+              <span class="footer-region">UK</span>
+              <span class="footer-region">UAE</span>
+              <span class="footer-region">India</span>
+              <span class="footer-region">GCC</span>
+            </div>
+            <p class="footer-tagline">ilming.io — Islamic learning software</p>
+          </div>
+          <div class="footer-col">
+            <h4>Product</h4>
+            <ul>
+              <li><a href="/platform/">Platform</a></li>
+              <li><a href="/features/">Features</a></li>
+              <li><a href="/ai/">AI &amp; Virtual Ustadh</a></li>
+              <li><a href="/present/">Product tour</a></li>
+              <li><a href="/demo-platform/">Demo guide</a></li>
+              <li><a href="/pricing/">Pricing</a></li>
+              <li><a href="/login" data-app-link="/login">Log in</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="/about/">About</a></li>
+              <li><a href="/contact/">Contact</a></li>
+              <li><a href="/verify" data-app-link="/verify">Verify certificate</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="/blog/">Blog</a></li>
+              <li><a href="/blog/why-your-madrassa-needs-an-lms/">Madrassa LMS guide</a></li>
+              <li><a href="/blog/secure-online-exams-for-islamic-schools/">Exam security</a></li>
+              <li><a href="/ai/">AI for educators</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="/privacy-policy/">Privacy policy</a></li>
+              <li><a href="/terms-and-conditions/">Terms &amp; conditions</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© <span id="footerYear">2026</span> ilming. All rights reserved.</p>
+          <p class="footer-note">ilming.io is an Islamic LMS software platform — not affiliated with third-party stationery brands.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/config.js"></script>
+    <script src="assets/js/site.js?v=20260815"></script>
+    <script src="assets/js/analytics.js"></script>
+  </body>
+</html>

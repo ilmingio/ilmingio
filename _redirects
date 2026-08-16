@@ -1,0 +1,9 @@
+# Netlify / Cloudflare Pages style redirects (legacy tuition site → new homepage)
+/courses/*    /    301
+/blogs/*      /    301
+/boards/*     /    301
+/subject/*    /    301
+/location/*   /    301
+/news/*       /    301
+/tools/*      /    301
+/nonacademic* /    301

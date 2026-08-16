@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0a6b5c" />
+    <title>ilming product tour — client walkthrough</title>
+    <meta
+      name="description"
+      content="Visual product tour of ilming: Virtual Ustadh, Hifz desk, CRM, guardian portal, student mobile, and the production technology stack."
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://ilming.io/present/" />
+    <meta property="og:site_name" content="ilming" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ilming.io/present/" />
+    <meta property="og:title" content="ilming product tour — 10-minute walkthrough" />
+    <meta property="og:description" content="Show a client the full Islamic LMS in ten slides: Hifz, Virtual Ustadh, CRM, mobile, fees, and guardians." />
+    <meta property="og:image" content="https://ilming.io/assets/images/og/ilming-og.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="../assets/images/favicon/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="../assets/images/favicon/favicon.ico" sizes="any" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cormorant+Garamond:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/site.css?v=20260815" />
+    <link rel="stylesheet" href="../assets/css/present.css?v=20260815c" />
+  </head>
+  <body class="present-body">
+    <div class="present-shell">
+      <aside class="present-rail" aria-label="Tour slides">
+        <a href="/" class="present-rail__brand">
+          <img src="../assets/images/logo/ilming_icon-mark.svg?v=20260602" alt="" width="36" height="36" />
+          <span>
+            <span class="present-rail__name">ilming</span>
+            <span class="present-rail__meta">Client tour</span>
+          </span>
+        </a>
+        <nav>
+          <ol class="present-toc">
+            <li><a href="#s-open" class="is-active"><span>01</span> Opening</a></li>
+            <li><a href="#s-loop"><span>02</span> The loop</a></li>
+            <li><a href="#s-surfaces"><span>03</span> Three surfaces</a></li>
+            <li><a href="#s-ustadh"><span>04</span> Virtual Ustadh</a></li>
+            <li><a href="#s-review"><span>05</span> Teacher desk</a></li>
+            <li><a href="#s-institute"><span>06</span> Institute CRM</a></li>
+            <li><a href="#s-guardian"><span>07</span> Guardian</a></li>
+            <li><a href="#s-modules"><span>08</span> Full LMS</a></li>
+            <li><a href="#s-app"><span>09</span> Student app</a></li>
+            <li><a href="#s-tech"><span>10</span> Technology</a></li>
+            <li><a href="#s-next"><span>11</span> Go live</a></li>
+          </ol>
+        </nav>
+        <p class="present-rail__hint">
+          <kbd>↓</kbd> <kbd>Space</kbd> next · <kbd>F</kbd> full screen
+        </p>
+      </aside>
+
+      <main class="deck" id="deck">
+        <!-- 01 -->
+        <section class="slide slide--dark slide-open" id="s-open">
+          <p class="slide-kicker">11-slide product tour</p>
+          <p class="slide-open__mark">ilming</p>
+          <h1>One platform for Tahfiz institutes, madrassas &amp; Islamic schools</h1>
+          <p class="slide-open__ar">حفظ · تجويد · إدارة المعهد</p>
+          <p class="slide-lead">
+            Hifz tracking, AI-guided practice, attendance, exams, fees, and parent visibility —
+            so staff spend time with students, not spreadsheets.
+          </p>
+          <div class="slide-open__pills">
+            <span>Web CRM</span>
+            <span>iOS &amp; Android</span>
+            <span>Guardian portal</span>
+            <span>UK · UAE · India · GCC</span>
+            <span>Next.js · Expo · Node</span>
+          </div>
+          <span class="slide-watermark" aria-hidden="true">01</span>
+        </section>
+
+        <!-- 02 -->
+        <section class="slide slide--cream" id="s-loop">
+          <p class="slide-kicker">How Hifz actually runs</p>
+          <h2>Teacher assigns. Student records. AI screens. Ustadh decides. Parent sees.</h2>
+          <p class="slide-lead">One loop. No WhatsApp audio dump. Approval never leaves the teacher.</p>
+          <ol class="tour-loop">
+            <li>
+              <strong>01 Assign</strong>
+              <h3>Portion</h3>
+              <p>Teacher sets surah &amp; ayah by batch, with a due date.</p>
+            </li>
+            <li>
+              <strong>02 Record</strong>
+              <h3>Practice</h3>
+              <p>Student opens Virtual Ustadh, listens, records on the phone.</p>
+            </li>
+            <li>
+              <strong>03 AI gate</strong>
+              <h3>Screen</h3>
+              <p>Transcript screening scores the attempt before the queue.</p>
+            </li>
+            <li>
+              <strong>04 Approve</strong>
+              <h3>Ustadh</h3>
+              <p>Play audio, read the summary, approve or ask a re-record.</p>
+            </li>
+            <li>
+              <strong>05 Parent</strong>
+              <h3>Sees</h3>
+              <p>Weekly AI report, term progress, playable approved recitations.</p>
+            </li>
+          </ol>
+          <span class="slide-watermark" aria-hidden="true">02</span>
+        </section>
+
+        <!-- 03 -->
+        <section class="slide slide--navy" id="s-surfaces">
+          <p class="slide-kicker">Same institute login</p>
+          <h2>Three surfaces. One stack.</h2>
+          <p class="slide-lead">Staff on the web. Students and parents on mobile. Everyone sees the same truth.</p>
+          <div class="tour-surfaces">
+            <article class="tour-surface">
+              <small>app.ilming.io</small>
+              <h3>Institute CRM</h3>
+              <ul>
+                <li>Admin, teacher, student, guardian portals</li>
+                <li>Tahfiz desk, exams, fees, families</li>
+                <li>Teacher tracking &amp; payouts</li>
+              </ul>
+            </article>
+            <article class="tour-surface">
+              <small>iOS &amp; Android</small>
+              <h3>Student app</h3>
+              <ul>
+                <li>Virtual Ustadh practice</li>
+                <li>Hifz map, goals, revision, history</li>
+                <li>Academy: lessons, exams, fees, live</li>
+              </ul>
+            </article>
+            <article class="tour-surface">
+              <small>Web + mobile</small>
+              <h3>Guardian</h3>
+              <ul>
+                <li>Daily Hifz updates</li>
+                <li>Attendance &amp; fee status</li>
+                <li>Pay online, download receipts</li>
+              </ul>
+            </article>
+          </div>
+          <span class="slide-watermark" aria-hidden="true">03</span>
+        </section>
+
+        <!-- 04 -->
+        <section class="slide slide--dark" id="s-ustadh">
+          <div class="tour-shot">
+            <div class="tour-shot__copy">
+              <p class="slide-kicker">Hero AI — live</p>
+              <h2>Virtual Ustadh on the phone</h2>
+              <p class="slide-lead">Listen. Record. Instant Madd &amp; Tajweed cues. Then it waits for the teacher.</p>
+              <ul class="tour-shot__list">
+                <li>Live waveform, status pill, Madd meter, score ring</li>
+                <li>Arabic ayah panel with Madd highlighting</li>
+                <li>Same login as the web LMS</li>
+              </ul>
+            </div>
+            <div class="tour-phones">
+              <img
+                src="../assets/images/product/mobile-virtual-ustadh.png"
+                alt="Virtual Ustadh practice — student recording"
+                width="450"
+                height="800"
+              />
+              <img
+                src="../assets/images/product/mobile-hifz-home.png"
+                alt="Student Hifz home"
+                width="450"
+                height="800"
+              />
+            </div>
+          </div>
+          <span class="slide-watermark" aria-hidden="true">04</span>
+        </section>
+
+        <!-- 05 -->
+        <section class="slide slide--white" id="s-review">
+          <div class="tour-shot">
+            <div class="tour-shot__copy">
+              <p class="slide-kicker">Teacher</p>
+              <h2>Review desk — AI assists, Ustadh decides</h2>
+              <p class="slide-lead">Pending recitations land in one queue. Play, read the AI summary, approve or re-record.</p>
+              <ul class="tour-shot__list">
+                <li>Daily Hifz sheet for the batch</li>
+                <li>Muraja&apos;a planner &amp; at-risk list</li>
+                <li>Final approval never leaves the teacher</li>
+              </ul>
+            </div>
+            <figure class="tour-frame">
+              <div class="browser-chrome" aria-hidden="true">
+                <span></span><span></span><span></span>
+                <div class="browser-chrome__url">app.ilming.io/teacher/tahfiz</div>
+              </div>
+              <img
+                src="../assets/images/product/crm-tahfiz-review.png"
+                alt="Teacher Tahfiz review desk"
+                width="1400"
+                height="875"
+              />
+            </figure>
+          </div>
+          <span class="slide-watermark" aria-hidden="true">05</span>
+        </section>
+
+        <!-- 06 -->
+        <section class="slide slide--cream" id="s-institute">
+          <div class="tour-shot">
+            <div class="tour-shot__copy">
+              <p class="slide-kicker">Institute admin</p>
+              <h2>The whole institute on one desk</h2>
+              <p class="slide-lead">Students, pending reviews, attendance, and fee collection — without five tools.</p>
+              <ul class="tour-shot__list">
+                <li>Bulk import students, teachers, batches</li>
+                <li>Families, notify households, teacher tracking</li>
+                <li>Payouts to tutors via Razorpay</li>
+              </ul>
+            </div>
+            <figure class="tour-frame">
+              <div class="browser-chrome" aria-hidden="true">
+                <span></span><span></span><span></span>
+                <div class="browser-chrome__url">app.ilming.io</div>
+              </div>
+              <img
+                src="../assets/images/product/crm-institute-dashboard.png"
+                alt="Institute dashboard"
+                width="1400"
+                height="875"
+              />
+            </figure>
+          </div>
+          <span class="slide-watermark" aria-hidden="true">06</span>
+        </section>
+
+        <!-- 07 -->
+        <section class="slide slide--white" id="s-guardian">
+          <div class="tour-shot">
+            <div class="tour-shot__copy">
+              <p class="slide-kicker">Parents</p>
+              <h2>Guardians see progress without calling the office</h2>
+              <p class="slide-lead">Practice status, weekly AI report, term progress, attendance, and fees — EN or Arabic RTL.</p>
+              <ul class="tour-shot__list">
+                <li>Play approved recordings</li>
+                <li>Family view for siblings</li>
+                <li>Pay online, PDF receipts</li>
+              </ul>
+            </div>
+            <figure class="tour-frame">
+              <div class="browser-chrome" aria-hidden="true">
+                <span></span><span></span><span></span>
+                <div class="browser-chrome__url">app.ilming.io/guardian</div>
+              </div>
+              <img
+                src="../assets/images/product/crm-guardian-progress.png"
+                alt="Guardian Quran progress"
+                width="1400"
+                height="875"
+              />
+            </figure>
+          </div>
+          <span class="slide-watermark" aria-hidden="true">07</span>
+        </section>
+
+        <!-- 08 -->
+        <section class="slide slide--cream" id="s-modules">
+          <p class="slide-kicker">Beyond Hifz — live today</p>
+          <h2>The full Islamic LMS in one glance</h2>
+          <p class="slide-lead">Everything the institute runs daily. Not a roadmap.</p>
+          <div class="tour-mosaic">
+            <article class="tour-tile"><b>Hifz desk</b><span>Map, goals, daily sheet, Muraja&apos;a, at-risk</span></article>
+            <article class="tour-tile"><b>Virtual Ustadh</b><span>Listen, record, AI gate, teacher approve</span></article>
+            <article class="tour-tile"><b>Attendance</b><span>Live class, lesson, exam, Quran practice</span></article>
+            <article class="tour-tile"><b>Exams</b><span>Banks, security, verification, results</span></article>
+            <article class="tour-tile"><b>Fees</b><span>Assign, remind, Razorpay, PDF receipts</span></article>
+            <article class="tour-tile"><b>Families</b><span>Link guardians, notify the household</span></article>
+            <article class="tour-tile"><b>Live classes</b><span>Zoom, Meet, or custom — with reminders</span></article>
+            <article class="tour-tile"><b>Certificates</b><span>Arabic PDFs + public verification</span></article>
+            <article class="tour-tile"><b>Teacher payouts</b><span>Pay tutors; they see earnings</span></article>
+            <article class="tour-tile"><b>Messaging</b><span>Batch chat, in-app, email, push</span></article>
+            <article class="tour-tile"><b>Bulk import</b><span>Students, teachers, batches in one go</span></article>
+            <article class="tour-tile"><b>10 languages</b><span>Arabic &amp; Urdu RTL · EN, FR, HI, TA…</span></article>
+          </div>
+          <span class="slide-watermark" aria-hidden="true">08</span>
+        </section>
+
+        <!-- 09 -->
+        <section class="slide slide--dark" id="s-app">
+          <p class="slide-kicker">Student mobile</p>
+          <h2>Four tabs. Full academy in the pocket.</h2>
+          <p class="slide-lead">Not a practice toy — the same LMS students already use on the web.</p>
+          <div class="tour-app-tabs">
+            <article class="tour-app-tab">
+              <em>Tab 1</em>
+              <h3>Home</h3>
+              <p>Continue practice, insights, notifications, AI tutor banner.</p>
+            </article>
+            <article class="tour-app-tab">
+              <em>Tab 2</em>
+              <h3>Hifz</h3>
+              <p>Map · Practice · Progress · Goals · Revision · History.</p>
+            </article>
+            <article class="tour-app-tab">
+              <em>Tab 3</em>
+              <h3>Academy</h3>
+              <p>Lessons, exams, attendance, fees, live, certificates, study plan.</p>
+            </article>
+            <article class="tour-app-tab">
+              <em>Tab 4</em>
+              <h3>More</h3>
+              <p>Reports, history, settings — plus guardian mode for parents.</p>
+            </article>
+          </div>
+          <span class="slide-watermark" aria-hidden="true">09</span>
+        </section>
+
+        <!-- 10 -->
+        <section class="slide slide--cream" id="s-tech">
+          <p class="slide-kicker">Engineering</p>
+          <h2>Built as a modern, production stack</h2>
+          <p class="slide-lead">One TypeScript platform — web CRM, student mobile, and API — not three disconnected tools.</p>
+          <div class="tour-tech">
+            <article class="tour-tech__col">
+              <small>api.ilming.io</small>
+              <h3>API</h3>
+              <p>Node.js 24 · Express · TypeScript</p>
+              <ul>
+                <li>MongoDB + Mongoose</li>
+                <li>Redis · BullMQ queues</li>
+                <li>Socket.IO realtime</li>
+                <li>JWT auth · Helmet · CSRF</li>
+                <li>OpenAI recitation screening</li>
+                <li>AWS S3 · Firebase FCM</li>
+              </ul>
+            </article>
+            <article class="tour-tech__col">
+              <small>app.ilming.io</small>
+              <h3>Web CRM</h3>
+              <p>Next.js 15 · React 19 · TypeScript</p>
+              <ul>
+                <li>Tailwind CSS 4 · SCSS</li>
+                <li>Redux Toolkit + Saga</li>
+                <li>10-language UI + Arabic RTL</li>
+                <li>TipTap · Recharts · RHF</li>
+                <li>Firebase push</li>
+                <li>Playwright · Jest</li>
+              </ul>
+            </article>
+            <article class="tour-tech__col">
+              <small>iOS &amp; Android</small>
+              <h3>Student app</h3>
+              <p>Expo 57 · React Native 0.86</p>
+              <ul>
+                <li>Expo Router · TypeScript</li>
+                <li>Secure store · audio · haptics</li>
+                <li>Push notifications</li>
+                <li>Socket.IO + Axios</li>
+                <li>Razorpay in-app pay</li>
+                <li>Guardian mode on same app</li>
+              </ul>
+            </article>
+          </div>
+          <div class="tour-tech__bar" aria-label="Shared infrastructure">
+            <span>Razorpay</span>
+            <span>OpenAI</span>
+            <span>Firebase</span>
+            <span>AWS S3</span>
+            <span>Zoom / Meet</span>
+            <span>Google sign-in</span>
+            <span>PM2 · Docker</span>
+          </div>
+          <span class="slide-watermark" aria-hidden="true">10</span>
+        </section>
+
+        <!-- 11 -->
+        <section class="slide slide--navy" id="s-next">
+          <p class="slide-kicker">Getting started</p>
+          <h2>Live in three steps. Pilot in 14 days.</h2>
+          <div class="tour-steps">
+            <article>
+              <span class="n">01</span>
+              <h3>We provision</h3>
+              <p>Institute admin, branding, optional white-label subdomain.</p>
+            </article>
+            <article>
+              <span class="n">02</span>
+              <h3>You import</h3>
+              <p>Batches, Hifz circles, teachers, families — wipe demo data anytime.</p>
+            </article>
+            <article>
+              <span class="n">03</span>
+              <h3>You run</h3>
+              <p>Students practise on mobile. Teachers clear the queue. Fees online.</p>
+            </article>
+          </div>
+          <div class="tour-close">
+            <a href="/contact/" class="cta-button gold">Book a demo</a>
+            <a href="/login" class="cta-button secondary" data-app-link="/login">Open the CRM</a>
+            <a href="/pricing/" class="cta-button secondary">View pricing</a>
+          </div>
+          <span class="slide-watermark" aria-hidden="true">11</span>
+        </section>
+      </main>
+    </div>
+
+    <div class="present-hud" role="group" aria-label="Slide controls">
+      <button type="button" id="presentPrev" aria-label="Previous slide">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+      </button>
+      <span class="present-hud__count" id="presentCount">01 / 11</span>
+      <button type="button" id="presentNext" aria-label="Next slide">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+      </button>
+      <button type="button" id="presentFull" aria-label="Full screen">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3H3v5M16 3h5v5M8 21H3v-5M21 16v5h-5"/></svg>
+      </button>
+    </div>
+
+    <script src="../assets/js/config.js"></script>
+    <script src="../assets/js/present.js?v=20260815"></script>
+  </body>
+</html>

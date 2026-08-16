@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0a6b5c" />
+    <title>Virtual Ustadh &amp; ilming AI — Quran Practice for Institutes</title>
+    <meta name="description" content="Virtual Ustadh AI-guided Quran practice plus optional exam and study assistants. AI screens recitations; teachers always approve. Built for Tahfiz institutes." />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://ilming.io/ai/" />
+    <meta property="og:site_name" content="ilming" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ilming.io/ai/" />
+    <meta property="og:title" content="Virtual Ustadh &amp; ilming AI — Quran Practice for Institutes" />
+    <meta property="og:description" content="Virtual Ustadh AI-guided Quran practice plus optional exam and study assistants. AI screens recitations; teachers always approve." />
+    <meta property="og:image" content="https://ilming.io/assets/images/og/ilming-og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="ilming — Islamic LMS for madrassas, schools and institutes" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Virtual Ustadh &amp; ilming AI — Quran Practice for Institutes" />
+    <meta name="twitter:description" content="Virtual Ustadh AI-guided Quran practice plus optional exam and study assistants. AI screens recitations; teachers always approve." />
+    <meta name="twitter:image" content="https://ilming.io/assets/images/og/ilming-og.png" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://ilming.io/"},{"@type":"ListItem","position":2,"name":"AI"}]}</script>
+                        <link rel="icon" href="../assets/images/favicon/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="../assets/images/favicon/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="../assets/images/favicon/site.webmanifest" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="ilming" />
+    <meta name="mobile-web-app-capable" content="yes" /><link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/site.css?v=20260815" />
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W6FCQMT3" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+                                        <div class="scroll-indicator" id="scrollIndicator"></div>
+
+    <div class="site-announcement" id="siteAnnouncement" role="region" aria-label="Announcement">
+      <div class="site-announcement__inner">
+        <p class="site-announcement__text">
+          <strong>Virtual Ustadh</strong> + full Islamic LMS — Tahfiz · Hifz · Academy · UK · UAE · India · GCC
+        </p>
+        <a href="/contact/" class="site-announcement__link">Book a demo</a>
+        <button type="button" class="site-announcement__dismiss" id="announceDismiss" aria-label="Dismiss announcement">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <header class="site-nav" id="navbar">
+      <div class="nav-inner">
+        <a href="/" class="brand">
+          <img src="../assets/images/logo/ilming_icon-mark.svg?v=20260602" alt="" class="brand__icon brand__icon--mark" width="44" height="44" aria-hidden="true" />
+          <span class="brand__lockup">
+            <span class="brand__name">ilming</span>
+            <span class="brand__tagline">Islamic LMS Platform</span>
+          </span>
+        </a>
+        <ul class="nav-links nav-desktop-only">
+          <li><a href="/platform/">Platform</a></li>
+          <li><a href="/features/">Features</a></li>
+          <li><a href="/ai/">AI</a></li>
+          <li><a href="/pricing/">Pricing</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+        <div class="nav-actions nav-desktop-only">
+          <a href="/login" class="nav-btn nav-btn-outline" data-app-link="/login">Log in</a>
+          <a href="/contact/" class="nav-btn nav-btn-primary">Book a demo</a>
+        </div>
+        <button type="button" class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+          <svg class="menu-toggle__icon menu-toggle__icon--open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          <svg class="menu-toggle__icon menu-toggle__icon--close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+    </header>
+    <button type="button" class="mobile-nav-backdrop" id="navBackdrop" aria-label="Close menu" tabindex="-1"></button>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Main menu">
+      <span class="mobile-nav__label">Menu</span>
+      <a href="/platform/">Platform</a>
+      <a href="/features/">Features</a>
+      <a href="/ai/">AI</a>
+      <a href="/pricing/">Pricing</a>
+      <a href="/blog/">Blog</a>
+      <a href="/about/">About</a>
+      <a href="/contact/">Contact</a>
+      <a href="/login" class="nav-btn nav-btn-outline" data-app-link="/login">Log in</a>
+      <a href="/contact/" class="nav-btn nav-btn-primary">Book a demo</a>
+    </nav>
+
+    <section class="page-hero">
+      <h1>AI that supports your Ustadh — not replaces them</h1>
+      <p>Virtual Ustadh screens student recitations before the review queue. Optional prep tools help with exams and study — teachers always decide.</p>
+    </section>
+
+    <section class="ustadh-section" id="virtual-ustadh">
+      <div class="ustadh-section__grid">
+        <div class="ustadh-section__copy reveal">
+          <span class="section-eyebrow section-eyebrow--on-dark">Hero AI feature</span>
+          <h2>Virtual Ustadh — AI-guided Quran practice</h2>
+          <p>
+            Students record on mobile. AI runs transcript screening and coaching cues (Madd meter, score ring).
+            Attempts that pass the gate wait for teacher approve or re-record — parents see the outcome.
+          </p>
+          <ul class="ustadh-points">
+            <li>Assign → Record → AI gate → Teacher approve → Parent sees</li>
+            <li>Live waveform, Madd meter, and score ring during practice</li>
+            <li>Weekly AI report and term progress for guardians</li>
+            <li>Acoustic Tajweed (Makharij / Madd / Waqf) on the roadmap</li>
+          </ul>
+        </div>
+        <div class="ustadh-section__media reveal">
+          <div class="ustadh-video">
+            <video controls playsinline preload="metadata" poster="../assets/images/product/ustadh-poster.jpg">
+              <source src="../assets/video/product/ustadh-demo.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="ustadh-phones">
+            <img src="../assets/images/product/mobile-virtual-ustadh.png" alt="Virtual Ustadh practice screen" width="450" height="800" loading="lazy" class="ustadh-phones__main" />
+            <img src="../assets/images/product/mobile-hifz-home.png" alt="Student app Hifz home" width="450" height="800" loading="lazy" class="ustadh-phones__alt" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <span class="section-eyebrow">Also available · Optional</span>
+        <h2 class="section-title">Prep assistants for staff &amp; students</h2>
+        <p class="section-subtitle">Enable per institute when you connect an OpenAI API key. Staff review before anything reaches the classroom.</p>
+        <div class="capability-grid">
+          <article class="capability reveal">
+            <h3>Exam question drafts</h3>
+            <p>Draft MCQs and short-answer items from topics — Islamic studies, Arabic, or academic subjects. Edit and approve before publish.</p>
+          </article>
+          <article class="capability reveal">
+            <h3>Student study assistant</h3>
+            <p>In-app Q&amp;A scoped to your course materials — within boundaries your institute sets.</p>
+          </article>
+          <article class="capability reveal">
+            <h3>Curriculum outline helper</h3>
+            <p>Draft term plans and lesson outlines from syllabus goals. Teams refine before assigning to batches.</p>
+          </article>
+          <article class="capability reveal">
+            <h3>Quiz &amp; worksheet assist</h3>
+            <p>Speed up practice quizzes and revision sheets — useful before intensives and exam seasons.</p>
+          </article>
+          <article class="capability reveal">
+            <h3>Mistake explanations</h3>
+            <p>Optional plain-language explanations of wrong answers after an exam attempt — per institute policy.</p>
+          </article>
+          <article class="capability reveal">
+            <h3>Not AI proctoring</h3>
+            <p>No face recognition. Exam integrity uses tab detection, fullscreen, and violation logs your staff review.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="responsible-ai reveal">
+          <h3>Responsible AI for Islamic education</h3>
+          <p>We built ilming AI with madrassa and school realities in mind — not as a shortcut around teaching, but as a prep tool for educators.</p>
+          <ul>
+            <li>Teachers and admins approve all AI-generated exam content before publish</li>
+            <li>Institutes control whether AI features are enabled at all</li>
+            <li>Student assistants are scoped to your uploaded materials — not open web search</li>
+            <li>Arabic and English supported; content must align with your institute's curriculum</li>
+            <li>AI is optional beta — core LMS works fully without it</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container highlight-grid">
+        <div class="highlight-content reveal">
+          <h2 class="section-title">How to enable AI</h2>
+          <p class="competitor-note" style="margin: 0 0 1rem; text-align: left">Available on Professional and Enterprise plans. Your institute admin connects an OpenAI API key in settings — usage and costs are under your control.</p>
+          <ol class="feature-list" style="list-style: decimal; padding-left: 1.25rem">
+            <li style="padding-left: 0.5rem">Request a pilot or upgrade to Professional</li>
+            <li style="padding-left: 0.5rem">Admin adds API key in institute settings</li>
+            <li style="padding-left: 0.5rem">Enable features per role (staff vs student)</li>
+            <li style="padding-left: 0.5rem">Train teachers on review-before-publish workflow</li>
+          </ol>
+        </div>
+        <div class="highlight-card reveal">
+          <h2 style="margin-bottom: 1rem; font-size: 1.35rem">Also live without AI</h2>
+          <p>Secure exams, fees, families, live classes, certificates, attendance, and 10 languages — all production-ready today. Recitation screening is live; staff AI assistants are optional beta.</p>
+          <p style="margin-top: 1rem"><a href="/features/" style="color: var(--gold-light); font-weight: 600">See all features →</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container">
+        <h2>See AI + exams in one demo</h2>
+        <p>15-minute walkthrough with your institute's use case — madrassa, school, or weekend programme.</p>
+        <div class="cta-buttons">
+          <a href="/contact/" class="cta-button gold">Book a demo</a>
+          <a href="/blog/ai-tools-for-islamic-educators/" class="cta-button secondary">Read: AI in Islamic education</a>
+        </div>
+      </div>
+    </section>
+
+                                                <footer class="site-footer">
+      <div class="footer-cta">
+        <div class="container footer-cta__inner">
+          <div class="footer-cta__copy">
+            <h3>Ready to modernise your institute?</h3>
+            <p>Book a demo or start a 14-day pilot — we'll set up your admin account.</p>
+          </div>
+          <div class="footer-cta__actions">
+            <a href="/contact/" class="cta-button gold">Book a demo</a>
+            <a href="/pricing/" class="cta-button secondary footer-cta__secondary">View pricing</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-main">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="/" class="brand brand--footer">
+              <img src="../assets/images/logo/ilming_icon.svg?v=20260602" alt="" class="brand__icon" width="44" height="44" aria-hidden="true" />
+              <span class="brand__lockup">
+                <span class="brand__name">ilming</span>
+                <span class="brand__tagline">Islamic LMS Platform</span>
+              </span>
+            </a>
+            <p>
+              AI-powered Quran learning and Islamic LMS for Tahfiz institutes, madrassas, and
+              Islamic schools — Hifz tracking, Virtual Ustadh, exams, fees, and guardian visibility.
+            </p>
+            <div class="footer-regions" aria-label="Regions served">
+              <span class="footer-region">UK</span>
+              <span class="footer-region">UAE</span>
+              <span class="footer-region">India</span>
+              <span class="footer-region">GCC</span>
+            </div>
+            <p class="footer-tagline">ilming.io — Islamic learning software</p>
+          </div>
+          <div class="footer-col">
+            <h4>Product</h4>
+            <ul>
+              <li><a href="/platform/">Platform</a></li>
+              <li><a href="/features/">Features</a></li>
+              <li><a href="/ai/">AI &amp; Virtual Ustadh</a></li>
+              <li><a href="/present/">Product tour</a></li>
+              <li><a href="/demo-platform/">Demo guide</a></li>
+              <li><a href="/pricing/">Pricing</a></li>
+              <li><a href="/login" data-app-link="/login">Log in</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="/about/">About</a></li>
+              <li><a href="/contact/">Contact</a></li>
+              <li><a href="/verify" data-app-link="/verify">Verify certificate</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="/blog/">Blog</a></li>
+              <li><a href="/blog/why-your-madrassa-needs-an-lms/">Madrassa LMS guide</a></li>
+              <li><a href="/blog/secure-online-exams-for-islamic-schools/">Exam security</a></li>
+              <li><a href="/ai/">AI for educators</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="/privacy-policy/">Privacy policy</a></li>
+              <li><a href="/terms-and-conditions/">Terms &amp; conditions</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© <span id="footerYear">2026</span> ilming. All rights reserved.</p>
+          <p class="footer-note">ilming.io is an Islamic LMS software platform — not affiliated with third-party stationery brands.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="../assets/js/config.js"></script>
+    <script src="../assets/js/site.js?v=20260815"></script>
+    <script src="../assets/js/analytics.js"></script>
+  </body>
+</html>

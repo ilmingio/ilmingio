@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none" role="img" aria-label="ilming">
+  <defs>
+    <linearGradient id="ilming-bg" x1="80" y1="48" x2="432" y2="464" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0c1829"/>
+      <stop offset="1" stop-color="#0a6b5c"/>
+    </linearGradient>
+    <linearGradient id="ilming-page-left" x1="128" y1="280" x2="256" y2="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#e8f7f4"/>
+    </linearGradient>
+    <linearGradient id="ilming-page-right" x1="256" y1="280" x2="384" y2="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f5fffc"/>
+      <stop offset="1" stop-color="#d4f0eb"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="512" height="512" rx="112" fill="url(#ilming-bg)"/>
+
+  <!-- Dome arch -->
+  <path
+    d="M152 262 C152 188 256 132 360 262"
+    stroke="#c9a84c"
+    stroke-width="16"
+    stroke-linecap="round"
+    fill="none"
+  />
+
+  <!-- Knowledge star -->
+  <path
+    d="M256 156 L264.5 184.5 L295 184.5 L270.25 202.5 L278.75 231 L256 213 L233.25 231 L241.75 202.5 L217 184.5 L247.5 184.5 Z"
+    fill="#c9a84c"
+  />
+
+  <!-- Open book -->
+  <path
+    d="M256 262 C208 250 152 272 120 310 L120 392 C160 360 208 346 256 366 Z"
+    fill="url(#ilming-page-left)"
+  />
+  <path
+    d="M256 262 C304 250 360 272 392 310 L392 392 C352 360 304 346 256 366 Z"
+    fill="url(#ilming-page-right)"
+  />
+
+  <!-- Book spine -->
+  <path
+    d="M256 262 L256 400"
+    stroke="#c9a84c"
+    stroke-width="10"
+    stroke-linecap="round"
+  />
+
+  <!-- Page lines -->
+  <path
+    d="M156 334 C188 318 220 312 244 318 M268 318 C292 312 324 318 356 334"
+    stroke="#0a6b5c"
+    stroke-width="6"
+    stroke-linecap="round"
+    opacity="0.35"
+  />
+</svg>
