@@ -365,7 +365,7 @@ def sync_file(rel: str, cfg: dict) -> None:
 def update_robots() -> None:
     content = """User-agent: *
 Allow: /
-Disallow: /_legacy/
+Disallow: /demo-platform/
 
 Sitemap: https://ilming.io/sitemap.xml
 """
@@ -375,20 +375,21 @@ Sitemap: https://ilming.io/sitemap.xml
 
 def update_sitemap() -> None:
     urls = [
-        (f"{SITE}/", "weekly", "1.0", "2026-06-01"),
-        (f"{SITE}/platform/", "monthly", "0.9", "2026-06-01"),
-        (f"{SITE}/features/", "monthly", "0.9", "2026-06-01"),
-        (f"{SITE}/ai/", "monthly", "0.85", "2026-06-01"),
-        (f"{SITE}/pricing/", "monthly", "0.9", "2026-06-01"),
+        (f"{SITE}/", "weekly", "1.0", "2026-08-15"),
+        (f"{SITE}/platform/", "monthly", "0.9", "2026-08-15"),
+        (f"{SITE}/features/", "monthly", "0.9", "2026-08-15"),
+        (f"{SITE}/present/", "monthly", "0.85", "2026-08-15"),
+        (f"{SITE}/pricing/", "monthly", "0.9", "2026-08-15"),
+        (f"{SITE}/ai/", "monthly", "0.85", "2026-08-15"),
         (f"{SITE}/blog/", "weekly", "0.8", "2026-06-01"),
         (f"{SITE}/blog/why-your-madrassa-needs-an-lms/", "monthly", "0.7", "2026-05-15"),
         (f"{SITE}/blog/secure-online-exams-for-islamic-schools/", "monthly", "0.7", "2026-05-08"),
         (f"{SITE}/blog/ai-tools-for-islamic-educators/", "monthly", "0.7", "2026-04-28"),
         (f"{SITE}/blog/guardian-portal-build-parent-trust/", "monthly", "0.7", "2026-04-12"),
-        (f"{SITE}/blog/digitising-madrassas-in-uk-and-uae/", "monthly", "0.7", "2026-03-22"),
-        (f"{SITE}/about/", "monthly", "0.7", "2026-06-01"),
-        (f"{SITE}/contact/", "monthly", "0.8", "2026-06-01"),
-        (f"{SITE}/privacy-policy/", "yearly", "0.3", "2026-05-01"),
+        (f"{SITE}/blog/digitising-madrassas-in-uk-and-uae/", "monthly", "0.7", "2026-08-15"),
+        (f"{SITE}/about/", "monthly", "0.7", "2026-08-15"),
+        (f"{SITE}/contact/", "monthly", "0.8", "2026-08-15"),
+        (f"{SITE}/privacy-policy/", "yearly", "0.3", "2026-08-15"),
         (f"{SITE}/terms-and-conditions/", "yearly", "0.3", "2026-05-01"),
     ]
     lines = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
