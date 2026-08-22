@@ -17,6 +17,7 @@ Static marketing website for **ilming** — an Islamic Learning Management Syste
 | `/contact/` | Demo / contact form |
 | `/present/` | 10-minute product tour |
 | `/demo-platform/` | Internal demo guide (noindex) |
+| `/docs/proposal-ai-cost/` | Internal proposal brief: Whisper / OpenAI cost (noindex) |
 | `/privacy-policy/` | Privacy |
 | `/terms-and-conditions/` | Terms |
 
