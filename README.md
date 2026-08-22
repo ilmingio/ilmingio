@@ -9,7 +9,8 @@ Static marketing website for **ilming** — an Islamic Learning Management Syste
 | `/` | Homepage |
 | `/platform/` | Platform overview |
 | `/features/` | Full module list |
-| `/pricing/` | Plans and pricing FAQ |
+| `/pricing/` | India INR plans |
+| `/pricing/usd/` | International USD plans (LMS + Quran AI) |
 | `/ai/` | Virtual Ustadh & AI tools |
 | `/blog/` | Blog |
 | `/about/` | Vision and purpose |

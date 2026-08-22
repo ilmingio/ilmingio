@@ -13,6 +13,7 @@ PAGES = [
     ("platform/index.html", "../assets/", False),
     ("features/index.html", "../assets/", False),
     ("pricing/index.html", "../assets/", False),
+    ("pricing/usd/index.html", "../../assets/", False),
     ("about/index.html", "../assets/", False),
     ("contact/index.html", "../assets/", False),
     ("ai/index.html", "../assets/", False),

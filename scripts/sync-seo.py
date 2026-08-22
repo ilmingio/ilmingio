@@ -42,6 +42,16 @@ PAGE_SEO = {
         "schemas": ["breadcrumb"],
         "breadcrumb": [("Home", SITE + "/"), ("Pricing", None)],
     },
+    "pricing/usd/index.html": {
+        "url": f"{SITE}/pricing/usd/",
+        "og_title": "USD Pricing — ilming Islamic LMS + Quran AI",
+        "schemas": ["breadcrumb"],
+        "breadcrumb": [
+            ("Home", SITE + "/"),
+            ("Pricing", SITE + "/pricing/"),
+            ("USD plans", None),
+        ],
+    },
     "about/index.html": {
         "url": f"{SITE}/about/",
         "og_title": "About ilming — Islamic LMS for Madrassas & Schools",
