@@ -96,7 +96,7 @@ def header_block(ap: str, noscript: bool) -> str:
     <header class="site-nav" id="navbar">
       <div class="nav-inner">
         <a href="/" class="brand">
-          <img src="{ap}images/logo/ilming_icon-mark.svg?v=20260602" alt="" class="brand__icon brand__icon--mark" width="44" height="44" aria-hidden="true" />
+          <img src="{ap}images/logo/ilming_icon-mark.svg?v=20260902" alt="" class="brand__icon brand__icon--mark" width="44" height="44" aria-hidden="true" />
           <span class="brand__lockup">
             <span class="brand__name">ilming</span>
             <span class="brand__tagline">Islamic LMS Platform</span>
@@ -156,7 +156,7 @@ def footer_block(ap: str, compact_cta: bool) -> str:
         <div class="footer-grid">
           <div class="footer-brand">
             <a href="/" class="brand brand--footer">
-              <img src="{ap}images/logo/ilming_icon.svg?v=20260602" alt="" class="brand__icon" width="44" height="44" aria-hidden="true" />
+              <img src="{ap}images/logo/ilming_icon.svg?v=20260902" alt="" class="brand__icon" width="44" height="44" aria-hidden="true" />
               <span class="brand__lockup">
                 <span class="brand__name">ilming</span>
                 <span class="brand__tagline">Islamic LMS Platform</span>

@@ -1,24 +1,41 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 160" fill="none" role="img" aria-label="ilming — Islamic LMS Platform">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 366.8456 115.046" fill="none" role="img" aria-label="ilming — Islamic LMS Platform">
+  <g transform="translate(-15.9765 -20.9558) scale(0.2706)">
   <defs>
-    <linearGradient id="logo-page-left" x1="128" y1="280" x2="256" y2="400" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#0a6b5c"/>
+    <linearGradient id="lg-pageL" x1="118" y1="258" x2="256" y2="398" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0a6b5c"/>
       <stop offset="1" stop-color="#085a4d"/>
     </linearGradient>
-    <linearGradient id="logo-page-right" x1="256" y1="280" x2="384" y2="400" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#12a090"/>
+    <linearGradient id="lg-pageR" x1="256" y1="258" x2="394" y2="398" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#12a090"/>
       <stop offset="1" stop-color="#0a6b5c"/>
     </linearGradient>
   </defs>
-
-  <g transform="translate(4, 18) scale(0.24)">
-    <path d="M152 262 C152 188 256 132 360 262" stroke="#c9a84c" stroke-width="16" stroke-linecap="round" fill="none"/>
-    <path d="M256 156 L264.5 184.5 L295 184.5 L270.25 202.5 L278.75 231 L256 213 L233.25 231 L241.75 202.5 L217 184.5 L247.5 184.5 Z" fill="#c9a84c"/>
-    <path d="M256 262 C208 250 152 272 120 310 L120 392 C160 360 208 346 256 366 Z" fill="url(#logo-page-left)"/>
-    <path d="M256 262 C304 250 360 272 392 310 L392 392 C352 360 304 346 256 366 Z" fill="url(#logo-page-right)"/>
-    <path d="M256 262 L256 400" stroke="#c9a84c" stroke-width="10" stroke-linecap="round"/>
-    <path d="M156 334 C188 318 220 312 244 318 M268 318 C292 312 324 318 356 334" stroke="#0c1829" stroke-width="6" stroke-linecap="round" opacity="0.2"/>
+  <path d="M256 110 L263.6537 129.5224 L282.8701 121.1299 L274.4776 140.3463 L294 148 L274.4776 155.6537 L282.8701 174.8701 L263.6537 166.4776 L256 186 L248.3463 166.4776 L229.1299 174.8701 L237.5224 155.6537 L218 148 L237.5224 140.3463 L229.1299 121.1299 L248.3463 129.5224 Z" fill="#c9a84c"/>
+  <path d="M148 268 A108 92 0 0 1 364 268" fill="none" stroke="#c9a84c" stroke-width="15" stroke-linecap="round"/>
+  <path d="M256 258 C208 244 152 268 118 312 L118 398 C160 364 210 348 256 372 Z" fill="url(#lg-pageL)"/>
+  <path d="M256 258 C304 244 360 268 394 312 L394 398 C352 364 302 348 256 372 Z" fill="url(#lg-pageR)"/>
+  <path d="M256 256 L256 404" fill="none" stroke="#c9a84c" stroke-width="10" stroke-linecap="round"/>
+  <path d="M154 336 C188 318 220 312 244 320 M268 320 C292 312 324 318 358 336" fill="none" stroke="#0c1829" stroke-width="6" stroke-linecap="round" opacity="0.18"/>
   </g>
-
-  <text x="138" y="72" font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-weight="800" font-size="46" fill="#0c1829" letter-spacing="3">ILMING</text>
-  <text x="141" y="102" font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-weight="500" font-size="17" fill="#0a6b5c" letter-spacing="1.5">Islamic LMS Platform</text>
+    <g transform="translate(116.9176 73.046) scale(0.078 -0.078)">
+      <path d="M55 75 L55 471 A75 75 0 0 1 205 471 L205 75 A75 75 0 0 1 55 75 Z" fill="#0c1829"/>
+      <path d="M130 592 L144.3277 635.41 L185.1543 614.8457 L164.59 655.6723 L208 670 L164.59 684.3277 L185.1543 725.1543 L144.3277 704.59 L130 748 L115.6723 704.59 L74.8457 725.1543 L95.41 684.3277 L52 670 L95.41 655.6723 L74.8457 614.8457 L115.6723 635.41 Z" fill="#c9a84c"/>
+    </g>
+    <g transform="translate(139.0696 73.046) scale(0.078 -0.078)">
+      <path d="M55 75 L55 682 A75 75 0 0 1 205 682 L205 75 A75 75 0 0 1 55 75 Z" fill="#0c1829"/>
+    </g>
+    <g transform="translate(161.2216 73.046) scale(0.078 -0.078)">
+      <path d="M55 0 L55 546 L195 546 L195 479 Q216 519 256 538.5 Q296 558 348 558 Q402 558 446.5 535.5 Q491 513 514 474 Q543 517 586.5 537.5 Q630 558 683 558 Q742 558 787.5 532 Q833 506 859 459.5 Q885 413 885 351 L885 0 L735 0 L735 319 Q735 366 709.5 394.5 Q684 423 640 423 Q596 423 570.5 394.5 Q545 366 545 319 L545 0 L395 0 L395 319 Q395 366 369.5 394.5 Q344 423 300 423 Q256 423 230.5 394.5 Q205 366 205 319 L205 0 Z" fill="#0c1829"/>
+    </g>
+    <g transform="translate(235.5556 73.046) scale(0.078 -0.078)">
+      <path d="M55 75 L55 471 A75 75 0 0 1 205 471 L205 75 A75 75 0 0 1 55 75 Z" fill="#0c1829"/>
+      <path d="M130 592 L144.3277 635.41 L185.1543 614.8457 L164.59 655.6723 L208 670 L164.59 684.3277 L185.1543 725.1543 L144.3277 704.59 L130 748 L115.6723 704.59 L74.8457 725.1543 L95.41 684.3277 L52 670 L95.41 655.6723 L74.8457 614.8457 L115.6723 635.41 Z" fill="#c9a84c"/>
+    </g>
+    <g transform="translate(257.7076 73.046) scale(0.078 -0.078)">
+      <path d="M55 0 L55 546 L195 546 L195 479 Q216 519 256 538.5 Q296 558 348 558 Q410 558 456.5 532 Q503 506 529 459.5 Q555 413 555 351 L555 0 L405 0 L405 319 Q405 366 377 394.5 Q349 423 305 423 Q261 423 233 394.5 Q205 366 205 319 L205 0 Z" fill="#0c1829"/>
+    </g>
+    <g transform="translate(306.3016 73.046) scale(0.078 -0.078)">
+      <path d="M323 -220 Q260 -220 206 -199 Q152 -178 113.5 -140.5 Q75 -103 58 -52 L197 -3 Q208 -41 242 -63 Q276 -85 323 -85 Q379 -85 411 -54.5 Q443 -24 443 29 L443 81 Q389 27 297 27 Q221 27 161 61.5 Q101 96 67 156.5 Q33 217 33 294 Q33 371 67 430.5 Q101 490 160 524 Q219 558 294 558 Q395 558 453 489 L453 546 L593 546 L593 29 Q593 -43 558 -99.5 Q523 -156 462.5 -188 Q402 -220 323 -220 Z M318 163 Q374 163 408.5 198.5 Q443 234 443 292 Q443 351 408.5 387 Q374 423 318 423 Q261 423 224.5 386.5 Q188 350 188 292 Q188 235 224.5 199 Q261 163 318 163 Z" fill="#0c1829"/>
+    </g>
+  <text x="117.9176" y="99.046" font-family="'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif" font-weight="600" font-size="13.5" fill="#0a6b5c" letter-spacing="1.8">Islamic LMS Platform</text>
 </svg>

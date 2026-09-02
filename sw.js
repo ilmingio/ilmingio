@@ -1,5 +1,5 @@
 /* ilming marketing site — lightweight PWA shell cache */
-const CACHE = 'ilming-site-v20260815';
+const CACHE = 'ilming-site-v20260902';
 
 const PRECACHE = [
   '/',
