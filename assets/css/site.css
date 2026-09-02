@@ -4160,23 +4160,6 @@ body.announcement-dismissed .site-announcement {
   gap: 1.25rem;
 }
 
-.ustadh-video {
-  border-radius: 16px;
-  overflow: hidden;
-  border: 1px solid rgba(201, 168, 76, 0.28);
-  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.35);
-  background: #03151f;
-}
-
-.ustadh-video video {
-  display: block;
-  width: 100%;
-  height: auto;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-  background: #03151f;
-}
-
 .ustadh-phones {
   display: flex;
   align-items: flex-end;
