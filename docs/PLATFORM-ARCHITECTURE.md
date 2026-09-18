@@ -172,7 +172,8 @@ Book demo → Platform admin creates institute → Institute admin login
 
 1. Institute sets fee structure
 2. Student/guardian sees pending fees
-3. `POST /fees/pay/order` → Razorpay checkout (WebView on mobile)
+3. `POST /fees/pay/order` → Razorpay, Stripe Checkout, GoCardless, or ToyyibPay FPX
+   (redirect `checkoutUrl` or Razorpay modal). `POST /fees/pay/confirm` after return.
 4. `POST /fees/pay/verify` on success
 
 ### Guardian Family Invite
@@ -196,7 +197,7 @@ Book demo → Platform admin creates institute → Institute admin login
 | `/api/recitation` | Tahfiz / Hifz workflow |
 | `/api/tahfiz-attendance` | Tahfiz attendance |
 | `/api/certificate` | PDF certificates + public verification |
-| `/api/fees` | Fee structures, Razorpay payments |
+| `/api/fees` | Fee structures, Razorpay / Stripe / GoCardless / FPX payments |
 | `/api/notification`, `/api/message`, `/api/communication` | Alerts & messaging |
 | `/api/chat`, `/api/ai` | AI chat, quiz generation, recommendations |
 | `/api/plan`, `/api/package`, `/api/subscription` | SaaS billing |
@@ -299,7 +300,7 @@ cd Ilming-student-mobile && pnpm start
 
 ## 12. Roadmap (Phase 2)
 
-- Deeper acoustic Tajweed analysis (Makharij, Madd, Waqf)
+- Phoneme-level Tajweed (beyond Whisper timing + letter-substitution screening)
 - Hifz sync improvements between web and mobile
 - Video avatar for Virtual Ustadh
 - WhatsApp fee reminders

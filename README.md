@@ -42,7 +42,7 @@ App login/register links resolve to `http://localhost:3000` when the hostname is
 | Navy | `#0c1829` | Hero, footer, headings |
 | Cream | `#faf7f2` | Section backgrounds |
 
-Fonts: **Cormorant Garamond** (display) + **Plus Jakarta Sans** (body)  
+Fonts: **Readex Pro** (display + body, Latin + Arabic) · **Amiri** (Quran)  
 CSS: `assets/css/site.css`
 
 ## SEO & layout sync

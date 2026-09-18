@@ -4,7 +4,7 @@ import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-CSS_VER = "20260815"
+CSS_VER = "20260919"
 SW_VER = "20260815"
 
 PAGES = [
@@ -84,7 +84,7 @@ def header_block(ap: str, noscript: bool) -> str:
     <div class="site-announcement" id="siteAnnouncement" role="region" aria-label="Announcement">
       <div class="site-announcement__inner">
         <p class="site-announcement__text">
-          <strong>Virtual Ustadh</strong> + full Islamic LMS — Tahfiz · Hifz · Academy · UK · UAE · India · GCC
+          <strong>The #1 AI Islamic LMS</strong> — Virtual Ustadh + Hifz + Academy · UK · UAE · India · GCC
         </p>
         <a href="/contact/" class="site-announcement__link">Book a demo</a>
         <button type="button" class="site-announcement__dismiss" id="announceDismiss" aria-label="Dismiss announcement">
@@ -99,7 +99,7 @@ def header_block(ap: str, noscript: bool) -> str:
           <img src="{ap}images/logo/ilming_icon-mark.svg?v=20260902" alt="" class="brand__icon brand__icon--mark" width="44" height="44" aria-hidden="true" />
           <span class="brand__lockup">
             <span class="brand__name">ilming</span>
-            <span class="brand__tagline">Islamic LMS Platform</span>
+            <span class="brand__tagline">#1 Islamic LMS</span>
           </span>
         </a>
         <ul class="nav-links nav-desktop-only">
@@ -159,11 +159,11 @@ def footer_block(ap: str, compact_cta: bool) -> str:
               <img src="{ap}images/logo/ilming_icon.svg?v=20260902" alt="" class="brand__icon" width="44" height="44" aria-hidden="true" />
               <span class="brand__lockup">
                 <span class="brand__name">ilming</span>
-                <span class="brand__tagline">Islamic LMS Platform</span>
+                <span class="brand__tagline">#1 Islamic LMS</span>
               </span>
             </a>
             <p>
-              AI-powered Quran learning and Islamic LMS for Tahfiz institutes, madrassas, and
+              The #1 AI-powered Islamic LMS for Tahfiz institutes, madrassas, and
               Islamic schools — Hifz tracking, Virtual Ustadh, exams, fees, and guardian visibility.
             </p>
             <div class="footer-regions" aria-label="Regions served">

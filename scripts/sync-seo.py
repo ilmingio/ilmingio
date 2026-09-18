@@ -14,7 +14,7 @@ LOGO = f"{SITE}/assets/images/logo/ilming_logo.svg"
 PAGE_SEO = {
     "index.html": {
         "url": f"{SITE}/",
-        "og_title": "ilming — Islamic LMS for Madrassas, Schools & Institutes",
+        "og_title": "ilming — The #1 AI Islamic LMS for Tahfiz Institutes",
         "schemas": ["organization", "software", "website"],
     },
     "404.html": {
@@ -26,13 +26,13 @@ PAGE_SEO = {
     },
     "platform/index.html": {
         "url": f"{SITE}/platform/",
-        "og_title": "Platform — ilming Islamic LMS",
+        "og_title": "Platform — The #1 Tahfiz LMS & Virtual Ustadh | ilming",
         "schemas": ["breadcrumb"],
         "breadcrumb": [("Home", SITE + "/"), ("Platform", None)],
     },
     "features/index.html": {
         "url": f"{SITE}/features/",
-        "og_title": "Features — ilming Islamic LMS",
+        "og_title": "Features — The #1 Hifz, Virtual Ustadh & Islamic LMS | ilming",
         "schemas": ["breadcrumb"],
         "breadcrumb": [("Home", SITE + "/"), ("Features", None)],
     },
@@ -54,7 +54,7 @@ PAGE_SEO = {
     },
     "about/index.html": {
         "url": f"{SITE}/about/",
-        "og_title": "About ilming — Islamic LMS for Madrassas & Schools",
+        "og_title": "About ilming — The #1 AI Islamic LMS",
         "schemas": ["breadcrumb"],
         "breadcrumb": [("Home", SITE + "/"), ("About", None)],
     },
@@ -66,7 +66,7 @@ PAGE_SEO = {
     },
     "ai/index.html": {
         "url": f"{SITE}/ai/",
-        "og_title": "Virtual Ustadh & ilming AI — Quran Practice for Institutes",
+        "og_title": "Virtual Ustadh — #1 AI Quran Practice for Institutes | ilming",
         "schemas": ["breadcrumb"],
         "breadcrumb": [("Home", SITE + "/"), ("AI", None)],
     },
@@ -175,7 +175,7 @@ def org_schema() -> dict:
         "name": "ilming",
         "url": SITE,
         "logo": LOGO,
-        "description": "Advanced Islamic Learning Management System for madrassas, schools, and learning institutes.",
+        "description": "The #1 AI-powered Islamic LMS for Tahfiz institutes, madrassas, and Islamic schools.",
         "areaServed": ["GB", "AE", "IN", "SA", "QA", "KW", "BH", "OM"],
     }
 
@@ -186,9 +186,9 @@ def software_schema() -> dict:
         "@type": "SoftwareApplication",
         "name": "ilming",
         "applicationCategory": "EducationalApplication",
-        "operatingSystem": "Web",
+        "operatingSystem": "Web, iOS, Android",
         "url": SITE,
-        "description": "Islamic LMS for madrassas and schools — secure exams, fees, guardian portal, live classes, and optional AI.",
+        "description": "The #1 AI-powered Islamic LMS with Virtual Ustadh Quran practice, Hifz tracking, exams, fees, live classes, and guardian portal.",
         "offers": {
             "@type": "Offer",
             "price": "999",
@@ -205,7 +205,7 @@ def website_schema() -> dict:
         "@type": "WebSite",
         "name": "ilming",
         "url": SITE,
-        "description": "Islamic LMS platform for madrassas, schools, and learning institutes.",
+        "description": "The #1 Islamic LMS platform for Tahfiz institutes, madrassas, and Islamic schools.",
         "publisher": {"@type": "Organization", "name": "ilming"},
     }
 

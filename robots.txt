@@ -1,6 +1,5 @@
 User-agent: *
 Allow: /
 Disallow: /demo-platform/
-Disallow: /docs/proposal-ai-cost/
 
 Sitemap: https://ilming.io/sitemap.xml
