@@ -47,7 +47,7 @@ def pwa_head_block(ap: str) -> str:
 
 
 PWA_HEAD_PAT = re.compile(
-    r'<link rel="icon" href="[^"]*favicon\.svg"[^>]*/>\s*'
+    r'\s*<link rel="icon" href="[^"]*favicon\.svg"[^>]*/>\s*'
     r'(?:<link rel="icon"[^>]*/>\s*)*'
     r'(?:<link rel="apple-touch-icon"[^>]*/>\s*)?'
     r'(?:<link rel="manifest"[^>]*/>\s*)?'
@@ -61,7 +61,7 @@ PWA_HEAD_PAT = re.compile(
 def sync_pwa_head(text: str, asset_prefix: str) -> str:
     block = pwa_head_block(asset_prefix)
     if PWA_HEAD_PAT.search(text):
-        return PWA_HEAD_PAT.sub(block, text, count=1)
+        return PWA_HEAD_PAT.sub("\n" + block + "\n", text, count=1)
     insert_before = re.search(r'\s*<link rel="preconnect"', text)
     if insert_before:
         return text[: insert_before.start()] + "\n" + block + text[insert_before.start() :]
@@ -72,12 +72,25 @@ def sync_pwa_head(text: str, asset_prefix: str) -> str:
     return text
 
 
+def tidy_markup(text: str) -> str:
+    """Stop layout/SEO injectors from leaving runaway indent or jammed tags."""
+    text = re.sub(r"\n[ \t]+(<link rel=\"icon\" href=\"[^\"]*favicon\.svg\")", r"\n    \1", text)
+    text = re.sub(r'(content="yes"\s*/>)\s*(<link[\s>])', r"\1\n    \2", text)
+    text = re.sub(r"\n(<link(?:\s|>))", r"\n    \1", text)
+    text = re.sub(r"\n[ \t]{5,}(<div class=\"scroll-indicator\")", r"\n    \1", text)
+    text = re.sub(r"\n[ \t]{5,}(<footer class=\"site-footer\")", r"\n    \1", text)
+    text = re.sub(r"\n[ \t]{5,}(<noscript)", r"\n    \1", text)
+    return text
+
+
 def header_block(ap: str, noscript: bool) -> str:
     ns = ""
     if noscript:
         ns = (
-            '    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W6FCQMT3" '
-            'height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>\n'
+            '    <noscript>\n'
+            '      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W6FCQMT3" '
+            'height="0" width="0" style="display:none;visibility:hidden"></iframe>\n'
+            '    </noscript>\n'
         )
     return f"""{ns}    <div class="scroll-indicator" id="scrollIndicator"></div>
 
@@ -252,12 +265,13 @@ def sync_file(rel: str, asset_prefix: str, is_home: bool) -> None:
     text = strip_dup_noscript(text)
     noscript = "noscript" in text and rel != "404.html"
 
-    # Replace header + any duplicated mobile nav blocks after it
+    # Replace GTM noscript + header + any duplicated mobile nav blocks after it
     header_pat = re.compile(
-        r"(?:<div class=\"scroll-indicator\".*?</header>|<header class=\"site-nav\".*?</header>)"
+        r"(?:\s*<noscript[\s>][\s\S]*?</noscript>)?"
+        r"\s*(?:<div class=\"scroll-indicator\".*?</header>|<header class=\"site-nav\".*?</header>)"
         r"(?:\s*<button type=\"button\" class=\"mobile-nav-backdrop\".*?</button>"
         r"\s*<nav class=\"mobile-nav\".*?</nav>)+",
-        re.DOTALL,
+        re.DOTALL | re.I,
     )
     if not header_pat.search(text):
         # 404 has no header yet
@@ -269,12 +283,14 @@ def sync_file(rel: str, asset_prefix: str, is_home: bool) -> None:
         else:
             print(f"warn: no header match in {rel}")
     else:
-        text = header_pat.sub(header_block(asset_prefix, False), text, count=1)
+        text = header_pat.sub(
+            "\n" + header_block(asset_prefix, noscript), text, count=1
+        )
 
     # Replace footer
-    footer_pat = re.compile(r"<footer class=\"site-footer\">.*?</footer>", re.DOTALL)
+    footer_pat = re.compile(r"\s*<footer class=\"site-footer\">.*?</footer>", re.DOTALL)
     if footer_pat.search(text):
-        text = footer_pat.sub(footer_block(asset_prefix, is_home), text, count=1)
+        text = footer_pat.sub("\n" + footer_block(asset_prefix, is_home), text, count=1)
     elif rel == "404.html":
         text = text.replace(
             "</section>",
@@ -298,6 +314,7 @@ def sync_file(rel: str, asset_prefix: str, is_home: bool) -> None:
     if script_pat.search(text):
         text = script_pat.sub("\n" + scripts_block(asset_prefix, analytics) + r"\1", text)
 
+    text = tidy_markup(text)
     path.write_text(text, encoding="utf-8")
     print(f"updated: {rel}")
 
