@@ -1826,6 +1826,37 @@ img {
   color: var(--primary);
 }
 
+.form-honeypot {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.form-status {
+  margin: 0 0 0.85rem;
+  padding: 0.75rem 0.9rem;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.form-status--success {
+  background: rgba(10, 107, 92, 0.1);
+  color: var(--primary);
+}
+
+.form-status--error {
+  background: #fdecea;
+  color: #9b1c1c;
+}
+
+.cta-button:disabled {
+  opacity: 0.7;
+  cursor: wait;
+}
+
 /* Prose */
 .prose {
   max-width: 720px;

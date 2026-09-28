@@ -1,5 +1,5 @@
 (function () {
-  const cfg = window.ILMING_SITE || { appUrl: 'https://app.ilming.io' };
+  const cfg = window.ILMING_SITE || { appUrl: 'https://app.ilming.io', apiUrl: 'https://api.ilming.io' };
 
   function appPath(path) {
     const base = cfg.appUrl.replace(/\/$/, '');
@@ -192,33 +192,78 @@
 
   const contactForm = document.getElementById('contactForm');
   if (contactForm) {
+    const statusEl = document.getElementById('contactStatus');
+    const submitBtn = contactForm.querySelector('button[type="submit"]');
+
+    function setContactStatus(type, text) {
+      if (!statusEl) return;
+      statusEl.hidden = !text;
+      statusEl.textContent = text || '';
+      statusEl.classList.remove('form-status--success', 'form-status--error');
+      if (type) statusEl.classList.add('form-status--' + type);
+    }
+
     contactForm.addEventListener('submit', function (e) {
       e.preventDefault();
       const fd = new FormData(contactForm);
-      const name = fd.get('name') || '';
-      const institute = fd.get('institute') || '';
-      const instituteType = fd.get('instituteType') || '';
-      const region = fd.get('region') || '';
-      const phone = fd.get('phone') || '';
-      const email = fd.get('email') || '';
-      const message = fd.get('message') || '';
-      const body = [
-        'Name: ' + name,
-        'Institute: ' + institute,
-        'Institute type: ' + instituteType,
-        'Region: ' + region,
-        'Phone: ' + phone,
-        'Email: ' + email,
-        '',
-        message,
-      ].join('\n');
-      window.location.href =
-        'mailto:' +
-        cfg.contactEmail +
-        '?subject=' +
-        encodeURIComponent('ilming — Demo / enquiry from ' + name) +
-        '&body=' +
-        encodeURIComponent(body);
+      const payload = {
+        name: String(fd.get('name') || '').trim(),
+        institute: String(fd.get('institute') || '').trim(),
+        instituteType: String(fd.get('instituteType') || '').trim(),
+        email: String(fd.get('email') || '').trim(),
+        phone: String(fd.get('phone') || '').trim(),
+        region: String(fd.get('region') || '').trim(),
+        message: String(fd.get('message') || '').trim(),
+        companyWebsite: String(fd.get('companyWebsite') || '').trim(),
+      };
+
+      if (!contactForm.reportValidity()) return;
+
+      const apiBase = (cfg.apiUrl || 'https://api.ilming.io').replace(/\/$/, '');
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Sending…';
+      }
+      setContactStatus('', '');
+
+      fetch(apiBase + '/api/public/contact', {
+        method: 'POST',
+        credentials: 'omit',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify(payload),
+      })
+        .then(function (res) {
+          return res.json().then(function (data) {
+            return { ok: res.ok, data: data || {} };
+          });
+        })
+        .then(function (result) {
+          if (result.ok && result.data.status === 'success') {
+            contactForm.reset();
+            setContactStatus(
+              'success',
+              result.data.message || 'Thanks — we typically reply within one business day.'
+            );
+            return;
+          }
+          setContactStatus(
+            'error',
+            (result.data && result.data.message) ||
+              'We could not send your message just now. Please email contact@ilming.io.'
+          );
+        })
+        .catch(function () {
+          setContactStatus(
+            'error',
+            'We could not send your message just now. Please email contact@ilming.io.'
+          );
+        })
+        .finally(function () {
+          if (submitBtn) {
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Send message';
+          }
+        });
     });
   }
 

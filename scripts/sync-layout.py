@@ -4,7 +4,7 @@ import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-CSS_VER = "20260919"
+CSS_VER = "20260920"
 SW_VER = "20260815"
 
 PAGES = [
