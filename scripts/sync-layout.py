@@ -19,6 +19,8 @@ PAGES = [
     ("ai/index.html", "../assets/", False),
     ("privacy-policy/index.html", "../assets/", False),
     ("terms-and-conditions/index.html", "../assets/", False),
+    ("security/index.html", "../assets/", False),
+    ("subprocessors/index.html", "../assets/", False),
     ("blog/index.html", "../assets/", False),
     ("blog/why-your-madrassa-needs-an-lms/index.html", "../../assets/", False),
     ("blog/secure-online-exams-for-islamic-schools/index.html", "../../assets/", False),
@@ -97,7 +99,7 @@ def header_block(ap: str, noscript: bool) -> str:
     <div class="site-announcement" id="siteAnnouncement" role="region" aria-label="Announcement">
       <div class="site-announcement__inner">
         <p class="site-announcement__text">
-          <strong>The #1 AI Islamic LMS</strong> — Virtual Ustadh + Hifz + Academy · UK · UAE · India · GCC
+          <strong>For Tahfiz institutes</strong> in the UK, UAE, India, and the GCC
         </p>
         <a href="/contact/" class="site-announcement__link">Book a demo</a>
         <button type="button" class="site-announcement__dismiss" id="announceDismiss" aria-label="Dismiss announcement">
@@ -112,7 +114,7 @@ def header_block(ap: str, noscript: bool) -> str:
           <img src="{ap}images/logo/ilming_icon-mark.svg?v=20260902" alt="" class="brand__icon brand__icon--mark" width="44" height="44" aria-hidden="true" />
           <span class="brand__lockup">
             <span class="brand__name">ilming</span>
-            <span class="brand__tagline">#1 Islamic LMS</span>
+            <span class="brand__tagline">Islamic LMS</span>
           </span>
         </a>
         <ul class="nav-links nav-desktop-only">
@@ -172,12 +174,12 @@ def footer_block(ap: str, compact_cta: bool) -> str:
               <img src="{ap}images/logo/ilming_icon.svg?v=20260902" alt="" class="brand__icon" width="44" height="44" aria-hidden="true" />
               <span class="brand__lockup">
                 <span class="brand__name">ilming</span>
-                <span class="brand__tagline">#1 Islamic LMS</span>
+                <span class="brand__tagline">Islamic LMS</span>
               </span>
             </a>
             <p>
-              The #1 AI-powered Islamic LMS for Tahfiz institutes, madrassas, and
-              Islamic schools — Hifz tracking, Virtual Ustadh, exams, fees, and guardian visibility.
+              Islamic learning software for Tahfiz institutes, madrassas, and
+              Islamic schools — Hifz tracking, web Hafazan practice, exams, fees, and guardian visibility.
             </p>
             <div class="footer-regions" aria-label="Regions served">
               <span class="footer-region">UK</span>
@@ -192,7 +194,7 @@ def footer_block(ap: str, compact_cta: bool) -> str:
             <ul>
               <li><a href="/platform/">Platform</a></li>
               <li><a href="/features/">Features</a></li>
-              <li><a href="/ai/">AI &amp; Virtual Ustadh</a></li>
+              <li><a href="/ai/">AI Hafazan teacher</a></li>
               <li><a href="/present/">Product tour</a></li>
               <li><a href="/demo-platform/">Demo guide</a></li>
               <li><a href="/pricing/">Pricing</a></li>
@@ -221,6 +223,8 @@ def footer_block(ap: str, compact_cta: bool) -> str:
             <ul>
               <li><a href="/privacy-policy/">Privacy policy</a></li>
               <li><a href="/terms-and-conditions/">Terms &amp; conditions</a></li>
+              <li><a href="/security/">Security</a></li>
+              <li><a href="/subprocessors/">Subprocessors</a></li>
             </ul>
           </div>
         </div>

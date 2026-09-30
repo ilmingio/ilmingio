@@ -4,23 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#0a6b5c" />
-    <title>Privacy Policy — ilming Islamic LMS</title>
-    <meta name="description" content="How ilming collects, uses, and protects data for madrassas, Islamic schools, and learning institutes using the LMS platform." />
+    <title>Subprocessors — ilming</title>
+    <meta name="description" content="Providers ilming uses for hosting, payments, email, notifications, transcription, and the talking-face add-on." />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://ilming.io/privacy-policy/" />
+    <link rel="canonical" href="https://ilming.io/subprocessors/" />
     <meta property="og:site_name" content="ilming" />
     <meta property="og:locale" content="en_GB" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://ilming.io/privacy-policy/" />
-    <meta property="og:title" content="Privacy Policy — ilming Islamic LMS" />
-    <meta property="og:description" content="How ilming collects, uses, and protects data for madrassas, Islamic schools, and learning institutes using the LMS platform." />
+    <meta property="og:url" content="https://ilming.io/subprocessors/" />
+    <meta property="og:title" content="Subprocessors — ilming" />
+    <meta property="og:description" content="Providers ilming uses for hosting, payments, email, notifications, transcription, and the talking-face add-on." />
     <meta property="og:image" content="https://ilming.io/assets/images/og/ilming-og.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="ilming — Islamic LMS for madrassas, schools and institutes" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Privacy Policy — ilming Islamic LMS" />
-    <meta name="twitter:description" content="How ilming collects, uses, and protects data for madrassas, Islamic schools, and learning institutes using the LMS platform." />
+    <meta name="twitter:title" content="Subprocessors — ilming" />
+    <meta name="twitter:description" content="Providers ilming uses for hosting, payments, email, notifications, transcription, and the talking-face add-on." />
     <meta name="twitter:image" content="https://ilming.io/assets/images/og/ilming-og.png" />
     <link rel="icon" href="../assets/images/favicon/favicon.svg" type="image/svg+xml" />
     <link rel="icon" href="../assets/images/favicon/favicon.ico" sizes="any" />
@@ -35,7 +35,7 @@
       href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../assets/css/site.css?v=20260930" />
+    <link rel="stylesheet" href="../assets/css/site.css?v=20260930d" />
   </head>
   <body>
     <noscript>
@@ -97,79 +97,42 @@
       <a href="/contact/" class="nav-btn nav-btn-primary">Book a demo</a>
     </nav>
     <section class="page-hero">
-      <h1>Privacy Policy</h1>
-      <p>Last updated: 30 September 2026</p>
+      <h1>Subprocessors</h1>
+      <p>Providers that process data to run ilming.</p>
     </section>
     <section class="section">
       <div class="container prose">
+
         <p>
-          ilming (“we”, “our”) operates the ilming.io website and the ilming platform used by
-          Tahfiz institutes, madrassas, Islamic schools, their staff, students, and guardians.
-          The institute decides why student and guardian data is collected. ilming processes that data to provide the service.
-          A signed data-processing addendum is available on request from
-          <a href="#" data-mailto="support">support@ilming.io</a>.
+          These are the providers ilming uses to run the platform. An institute’s live class links (Google Meet, Zoom, or another URL the institute pastes) are that institute’s own meetings and are not listed here.
+          Last updated: 30 September 2026.
         </p>
-        <h2>Information we collect</h2>
-        <ul>
-          <li>Account data: names, emails, phone numbers, roles, and institute membership</li>
-          <li>Education records: batches, attendance, assignments, exam results, certificates, and Hifz progress</li>
-          <li>Guardian links and the progress the institute chooses to show a parent</li>
-          <li>Fee records and payment references. Card and bank details are collected by the payment provider, not stored as full card numbers by ilming</li>
-          <li>Recitation audio, described below</li>
-          <li>Technical logs: IP address, device, and security events, including exam integrity events when an institute turns those checks on</li>
-        </ul>
-        <h2>Voice and recitation audio</h2>
+        <table>
+          <thead>
+            <tr><th>Provider</th><th>Purpose</th><th>Data</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Amazon Web Services</td><td>Application hosting and Quran reference clips</td><td>Application data and reference audio</td></tr>
+            <tr><td>MongoDB Atlas</td><td>Database</td><td>Institute, student, guardian, and academic records</td></tr>
+            <tr><td>OpenAI</td><td>Word transcription for scored practice. Optional staff and study tools when the institute connects its own key</td><td>The recitation clip for that attempt, or the prompt the feature sends</td></tr>
+            <tr><td>D-ID</td><td>Talking-face add-on on the web, only when an institute turns it on</td><td>Session data for that practice</td></tr>
+            <tr><td>Firebase</td><td>Push notifications</td><td>Device tokens</td></tr>
+            <tr><td>Google</td><td>Optional Google sign-in</td><td>The account identity used to sign in</td></tr>
+            <tr><td>Brevo</td><td>Service email</td><td>Recipient address and the message</td></tr>
+            <tr><td>Razorpay</td><td>Fee payments for institutes that use it</td><td>Payment information for that charge</td></tr>
+            <tr><td>Stripe</td><td>Fee payments for institutes that use it</td><td>Payment information for that charge</td></tr>
+            <tr><td>GoCardless</td><td>Direct debit for institutes that use it</td><td>Payment information for that charge</td></tr>
+            <tr><td>ToyyibPay</td><td>FPX payments for institutes that use it</td><td>Payment information for that charge</td></tr>
+          </tbody>
+        </table>
         <p>
-          When a student practises or submits a recitation, the recording is stored as a file on the application server.
-          It is served through an access-controlled address. It is not placed in a public bucket.
+          ilming does not sell personal data. Recitation audio is not used by ilming to train models.
+          How long recordings are kept, and how to delete them, is in the <a href="/privacy-policy/">privacy policy</a>.
         </p>
-        <ul>
-          <li><strong>Who can open it.</strong> The student, teachers reviewing that attempt, institute staff with access to the desk, and guardians when the institute’s guardian view includes approved recordings.</li>
-          <li><strong>Scoring.</strong> When practice scoring is on, the audio file is sent to OpenAI (Whisper) to transcribe words for that attempt. ilming does not train its own models on these recordings.</li>
-          <li><strong>Talking face.</strong> If the institute turns on the web talking-face add-on, the session uses D-ID. The private D-ID key stays on the ilming server.</li>
-          <li><strong>Staff AI.</strong> Optional exam and study assistants can use an OpenAI key the institute connects itself. That traffic goes to OpenAI under the institute’s key.</li>
-          <li><strong>Deletion by the student.</strong> A student can delete a practice clip or a recording that is still waiting for review. An approved recording stays on file so the teacher and guardian record remains.</li>
-          <li><strong>When an institute leaves.</strong> Email <a href="#" data-mailto="support">support@ilming.io</a> to request an export and deletion of the institute’s recordings and other tenant data. There is no fixed public retention period beyond the life of the institute account.</li>
-        </ul>
         <p>
-          Scoring is a word check. It is not a Tajweed certificate. The teacher makes the academic decision.
+          To ask for a data-processing addendum, email <a href="#" data-mailto="support">support@ilming.io</a>.
         </p>
-        <h2>Exams and cameras</h2>
-        <p>
-          Default exams do not open a camera. If an institute requires a webcam, the student’s browser opens the camera for that exam to check that a camera stays connected. That video is not uploaded as a recording and is not used for face recognition. A disconnect is logged for staff.
-          The exam form includes a screen-recording option. The current exam monitor does not capture or upload the screen. Checks that do run, when the institute enables them, are fullscreen, tab and window focus, copy and paste, and right-click.
-        </p>
-        <h2>Children</h2>
-        <p>
-          Students may be children. The institute is responsible for having a lawful basis to add them and to contact their guardians. Guardians have their own accounts. ilming does not sell student data and does not use it for advertising.
-        </p>
-        <h2>How we use data</h2>
-        <ul>
-          <li>Run Hifz, practice, exams, fees, notifications, and certificates</li>
-          <li>Take fee payments through Razorpay, Stripe, GoCardless, or ToyyibPay when that method is enabled for the institute</li>
-          <li>Send service email through our mail provider, and push notifications through Firebase when the institute uses them</li>
-          <li>Keep the service secure and meet legal duties</li>
-        </ul>
-        <h2>Sharing</h2>
-        <p>
-          We use the subprocessors listed on the <a href="/subprocessors/">subprocessors</a> page. We do not sell personal data.
-          Each institute is a separate tenant. Staff see the students their role allows.
-        </p>
-        <h2>Where data is stored</h2>
-        <p>
-          The application runs on AWS. Institute records are in MongoDB Atlas. Database backups run on a schedule.
-          Recitation files stay on the application server. Some Quran reference clips are stored in Amazon S3.
-          More detail is on the <a href="/security/">security</a> page.
-        </p>
-        <h2>Retention and rights</h2>
-        <p>
-          People can download a copy of their personal data from Settings → Your data rights, or email
-          <a href="#" data-mailto="contact">contact@ilming.io</a>
-          for access, correction, or deletion. Students and guardians can close their own account from Settings.
-          Staff accounts are closed by the institute. Requests are handled under the law that applies to that person, including UK GDPR where it applies.
-        </p>
-        <h2>Contact</h2>
-        <p>Privacy questions: <a href="#" data-mailto="contact">contact@ilming.io</a></p>
+
       </div>
     </section>
     <footer class="site-footer">

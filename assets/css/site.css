@@ -1931,6 +1931,27 @@ img {
   margin-bottom: 1rem;
 }
 
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 0 1.25rem;
+  font-size: 0.95rem;
+}
+
+.prose th,
+.prose td {
+  text-align: left;
+  vertical-align: top;
+  padding: 0.65rem 0.75rem;
+  border-bottom: 1px solid var(--cream-dark);
+  color: var(--text-muted);
+}
+
+.prose th {
+  color: var(--secondary);
+  font-weight: 600;
+}
+
 .prose .lead-text {
   font-size: 1.1rem;
   color: var(--text);

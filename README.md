@@ -18,8 +18,10 @@ Static marketing website for **ilming** — an Islamic Learning Management Syste
 | `/present/` | 10-minute product tour |
 | `/demo-platform/` | Internal demo guide (noindex) |
 | `/docs/proposal-ai-cost/` | Internal proposal brief: Whisper / OpenAI cost (noindex) |
-| `/privacy-policy/` | Privacy |
+| `/privacy-policy/` | Privacy, including recitation audio |
 | `/terms-and-conditions/` | Terms |
+| `/security/` | Security practices |
+| `/subprocessors/` | Providers that process data |
 
 Also: `404.html`, `robots.txt`, `sitemap.xml`, `_redirects` (legacy tuition URLs), `_headers`.
 
