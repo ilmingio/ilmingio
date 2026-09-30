@@ -77,7 +77,7 @@
     var lead = document.getElementById('homePricingLead');
     if (lead) {
       lead.textContent =
-        'Halaqa is free for 30 students. Circle is ' +
+        'Halaqa is the free desk for 30 students. Scored practice starts on Circle at ' +
         info.circle +
         ' a month for institutes in ' +
         info.place +
