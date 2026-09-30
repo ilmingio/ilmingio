@@ -128,8 +128,9 @@
           <li><strong>Scoring.</strong> When practice scoring is on, the audio file is sent to OpenAI (Whisper) to transcribe words for that attempt. ilming does not train its own models on these recordings.</li>
           <li><strong>Talking face.</strong> If the institute turns on the web talking-face add-on, the session uses D-ID. The private D-ID key stays on the ilming server.</li>
           <li><strong>Staff AI.</strong> Optional exam and study assistants can use an OpenAI key the institute connects itself. That traffic goes to OpenAI under the institute’s key.</li>
-          <li><strong>Deletion by the student.</strong> A student can delete a practice clip or a recording that is still waiting for review. An approved recording stays on file so the teacher and guardian record remains.</li>
-          <li><strong>When an institute leaves.</strong> Email <a href="#" data-mailto="support">support@ilming.io</a> to request an export and deletion of the institute’s recordings and other tenant data. There is no fixed public retention period beyond the life of the institute account.</li>
+          <li><strong>Practice and recordings waiting for review.</strong> The student can delete these. The audio file is removed from the application server at that moment, unless another attempt still uses the same file.</li>
+          <li><strong>Approved recordings.</strong> These stay for the life of the institute account, so the teacher and guardian record remains. They are not deleted on a timer.</li>
+          <li><strong>When an institute leaves.</strong> Email <a href="#" data-mailto="support">support@ilming.io</a> to request an export and deletion. Tenant recordings and records are removed when that request is completed. A database backup is taken daily and the local copy is deleted after it uploads. An older backup can still contain a recording until that backup is no longer kept for recovery.</li>
         </ul>
         <p>
           Scoring is a word check. It is not a Tajweed certificate. The teacher makes the academic decision.

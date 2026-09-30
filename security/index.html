@@ -123,8 +123,9 @@
         <h2>Hosting and backups</h2>
         <p>
           The application runs on AWS. Institute records are in MongoDB Atlas.
-          A database backup job runs on a schedule, daily by default.
+          A database backup job runs daily by default. The local backup file is deleted after it uploads.
           Backups are for recovery of the service. They are not a substitute for an institute export.
+          A recording a student has deleted can remain inside an older backup until that backup is no longer kept.
         </p>
         <h2>Exams</h2>
         <p>
@@ -140,7 +141,7 @@
         </p>
         <h2>Deletion</h2>
         <p>
-          Students can delete a practice clip or a recording that is still waiting for review. Approved recordings stay so the teacher and guardian record remains.
+          Students can delete a practice clip or a recording that is still waiting for review. That audio file is removed from the server at that moment. Approved recordings stay for the life of the institute account so the teacher and guardian record remains. They are not deleted on a timer.
           Students and guardians can close their own account from Settings. An institute leaving ilming can email support to request export and deletion of its tenant data.
         </p>
         <h2>If something goes wrong</h2>
