@@ -48,7 +48,7 @@
         <p class="site-announcement__text">
           <strong>For Tahfiz institutes</strong> in the UK, UAE, India, and the GCC
         </p>
-        <a href="/contact/" class="site-announcement__link">Book a demo</a>
+        <a href="/contact/?intent=demo" class="site-announcement__link" data-track="book_demo">Book a 15-minute demo</a>
         <button type="button" class="site-announcement__dismiss" id="announceDismiss" aria-label="Dismiss announcement">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
         </button>
@@ -75,7 +75,7 @@
         </ul>
         <div class="nav-actions nav-desktop-only">
           <a href="/login" class="nav-btn nav-btn-outline" data-app-link="/login">Log in</a>
-          <a href="/contact/" class="nav-btn nav-btn-primary">Book a demo</a>
+          <a href="/contact/?intent=batch" class="nav-btn nav-btn-primary" data-track="start_batch">Start free</a>
         </div>
         <button type="button" class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
           <svg class="menu-toggle__icon menu-toggle__icon--open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
@@ -94,7 +94,7 @@
       <a href="/about/">About</a>
       <a href="/contact/">Contact</a>
       <a href="/login" class="nav-btn nav-btn-outline" data-app-link="/login">Log in</a>
-      <a href="/contact/" class="nav-btn nav-btn-primary">Book a demo</a>
+      <a href="/contact/?intent=batch" class="nav-btn nav-btn-primary" data-track="start_batch">Start free</a>
     </nav>
 
     <section class="page-hero page-hero--blog">
@@ -102,7 +102,7 @@
       <h1>Insights for Islamic educators</h1>
       <p>Practical guides on LMS adoption, exam security, AI, parent engagement, and running institutes in the UK, UAE, and beyond.</p>
       <div class="page-hero__stats">
-        <div class="page-hero__stat"><strong>5</strong><span>Guides published</span></div>
+        <div class="page-hero__stat"><strong>6</strong><span>Guides published</span></div>
         <div class="page-hero__stat"><strong>UK · UAE · GCC</strong><span>Regional focus</span></div>
         <div class="page-hero__stat"><strong>Institute leaders</strong><span>Written for admins &amp; Ustadh</span></div>
       </div>
@@ -145,6 +145,23 @@
 
         <div class="blog-grid" id="blogGrid">
           <p class="blog-empty" id="blogEmpty" hidden>No articles in this topic yet.</p>
+          <article class="blog-card reveal" data-topics="madrassa">
+            <div class="blog-card__image blog-card__image--madrassa">
+              <div class="blog-card__icon" aria-hidden="true">📖</div>
+            </div>
+            <div class="blog-card__body">
+              <div class="blog-card__meta"><span class="blog-tag">Tahfiz</span><span class="blog-tag">Hifz</span></div>
+              <h2><a href="/blog/why-whatsapp-is-not-enough-for-hifz/">Why WhatsApp is not enough for Hifz management</a></h2>
+              <p>A chat can carry the day's portion. It does not keep the assignment, the Ustadh's approval, or the parent's progress.</p>
+              <div class="blog-card__footer">
+                <div class="blog-card__meta-row">
+                  <time datetime="2026-09-30">30 September 2026</time>
+                  <span class="blog-card__read">4 min read</span>
+                </div>
+                <a href="/blog/why-whatsapp-is-not-enough-for-hifz/" class="blog-card__link">Read →</a>
+              </div>
+            </div>
+          </article>
           <article class="blog-card reveal" data-topics="exams">
             <div class="blog-card__image blog-card__image--exams">
               <div class="blog-card__icon" aria-hidden="true">🔒</div>
@@ -216,20 +233,20 @@
         </div>
 
         <div class="blog-newsletter reveal">
-          <h3>Want a demo tailored to your institute?</h3>
-          <p>Book a 15-minute walkthrough — exams, fees, guardians, and optional AI — with your madrassa or school workflows in mind.</p>
-          <a href="/contact/" class="cta-button gold">Request a demo</a>
+          <h3>Start with one Hifz batch</h3>
+          <p>We set up the first batch with you. A 15-minute demo is there if you want to see the workflow first.</p>
+          <a href="/contact/?intent=batch" class="cta-button gold" data-track="start_batch">Set up my first batch</a>
         </div>
       </div>
     </section>
 
     <section class="cta-section">
       <div class="container">
-        <h2>Ready to see ilming on your institute?</h2>
-        <p>Book a demo or start a 14-day pilot — we'll set up your admin account and demo batches.</p>
+        <h2>Start with one Hifz batch</h2>
+        <p>We set up the institute admin with you. See the workflow first if you prefer.</p>
         <div class="cta-buttons">
-          <a href="/contact/" class="cta-button gold">Request a demo</a>
-          <a href="/platform/" class="cta-button secondary">Explore platform</a>
+          <a href="/contact/?intent=batch" class="cta-button gold" data-track="start_batch">Set up my first batch</a>
+          <a href="/contact/?intent=demo" class="cta-button secondary" data-track="book_demo">Book a 15-minute demo</a>
         </div>
       </div>
     </section>
@@ -238,10 +255,10 @@
         <div class="container footer-cta__inner">
           <div class="footer-cta__copy">
             <h3>Ready to modernise your institute?</h3>
-            <p>Book a demo or start a 14-day pilot — we'll set up your admin account.</p>
+            <p>Start with one Hifz batch for free. We set up the institute admin with you.</p>
           </div>
           <div class="footer-cta__actions">
-            <a href="/contact/" class="cta-button gold">Book a demo</a>
+            <a href="/contact/?intent=batch" class="cta-button gold" data-track="start_batch">Start with one batch</a>
             <a href="/pricing/" class="cta-button secondary footer-cta__secondary">View pricing</a>
           </div>
         </div>

@@ -190,6 +190,17 @@
     observer.observe(el);
   });
 
+  document.querySelectorAll('[data-track]').forEach(function (el) {
+    el.addEventListener('click', function () {
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: 'ilming_cta',
+        cta_name: el.getAttribute('data-track') || '',
+        page_path: window.location.pathname,
+      });
+    });
+  });
+
   const contactForm = document.getElementById('contactForm');
   if (contactForm) {
     const statusEl = document.getElementById('contactStatus');
@@ -203,9 +214,31 @@
       if (type) statusEl.classList.add('form-status--' + type);
     }
 
+    const params = new URLSearchParams(window.location.search);
+    const intent = params.get('intent') === 'demo' ? 'demo' : params.get('intent') === 'batch' ? 'batch' : '';
+    const intentInput = document.getElementById('intent');
+    const messageInput = document.getElementById('message');
+    if (intentInput) intentInput.value = intent;
+    if (messageInput && !messageInput.value && intent === 'batch') {
+      messageInput.value = 'Please set up one Hifz batch for our institute.';
+    }
+    if (messageInput && !messageInput.value && intent === 'demo') {
+      messageInput.value = 'I would like a 15-minute demo of the Hifz workflow.';
+    }
+
     contactForm.addEventListener('submit', function (e) {
       e.preventDefault();
       const fd = new FormData(contactForm);
+      const students = String(fd.get('students') || '').trim();
+      const teachers = String(fd.get('teachers') || '').trim();
+      const requestIntent = String(fd.get('intent') || '').trim();
+      const notes = [];
+      if (requestIntent === 'batch') notes.push('Request: set up one Hifz batch');
+      if (requestIntent === 'demo') notes.push('Request: 15-minute demo');
+      if (students) notes.push('Students: ' + students);
+      if (teachers) notes.push('Teachers: ' + teachers);
+      let message = String(fd.get('message') || '').trim();
+      if (notes.length) message = notes.join('\n') + '\n\n' + message;
       const payload = {
         name: String(fd.get('name') || '').trim(),
         institute: String(fd.get('institute') || '').trim(),
@@ -213,7 +246,7 @@
         email: String(fd.get('email') || '').trim(),
         phone: String(fd.get('phone') || '').trim(),
         region: String(fd.get('region') || '').trim(),
-        message: String(fd.get('message') || '').trim(),
+        message: message,
         companyWebsite: String(fd.get('companyWebsite') || '').trim(),
       };
 
@@ -239,6 +272,12 @@
         })
         .then(function (result) {
           if (result.ok && result.data.status === 'success') {
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+              event: 'ilming_enquiry',
+              cta_name: requestIntent || 'contact',
+              page_path: window.location.pathname,
+            });
             contactForm.reset();
             setContactStatus(
               'success',

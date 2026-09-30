@@ -415,6 +415,8 @@ def update_sitemap() -> None:
         (f"{SITE}/blog/digitising-madrassas-in-uk-and-uae/", "monthly", "0.7", "2026-03-22"),
         (f"{SITE}/about/", "monthly", "0.7", SITE_LASTMOD),
         (f"{SITE}/contact/", "monthly", "0.8", SITE_LASTMOD),
+        (f"{SITE}/tahfiz-management-software/", "monthly", "0.9", "2026-09-30"),
+        (f"{SITE}/blog/why-whatsapp-is-not-enough-for-hifz/", "monthly", "0.7", "2026-09-30"),
         (f"{SITE}/privacy-policy/", "yearly", "0.3", SITE_LASTMOD),
         (f"{SITE}/terms-and-conditions/", "yearly", "0.3", SITE_LASTMOD),
     ]
