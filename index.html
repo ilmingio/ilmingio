@@ -26,7 +26,7 @@
     <meta name="twitter:description" content="Islamic LMS for Tahfiz institutes, madrassas, and Islamic schools. Hifz tracking, web Hafazan practice, attendance, exams, families, fees, live classes, and guardian reports. UK, UAE, India, and GCC." />
     <meta name="twitter:image" content="https://ilming.io/assets/images/og/ilming-og.png" />
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"ilming","url":"https://ilming.io","logo":"https://ilming.io/assets/images/logo/ilming_logo.svg","description":"Islamic LMS for Tahfiz institutes, madrassas, and Islamic schools.","areaServed":["GB","AE","IN","SA","QA","KW","BH","OM"]}</script>
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"ilming","applicationCategory":"EducationalApplication","operatingSystem":"Web, iOS, Android","url":"https://ilming.io","description":"Islamic LMS with web Hafazan practice, Hifz tracking, exams, fees, live classes, and a guardian portal.","offers":{"@type":"Offer","price":"0","priceCurrency":"INR","description":"Free for up to 30 students. Paid plans from ₹499."},"provider":{"@type":"Organization","name":"ilming","url":"https://ilming.io"}}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"ilming","applicationCategory":"EducationalApplication","operatingSystem":"Web, iOS, Android","url":"https://ilming.io","description":"Islamic LMS with web Hafazan practice, Hifz tracking, exams, fees, live classes, and a guardian portal.","offers":{"@type":"Offer","price":"0","priceCurrency":"INR","description":"Free for up to 30 students. Local prices for India, the UAE, Saudi Arabia, the Gulf, and the UK."},"provider":{"@type":"Organization","name":"ilming","url":"https://ilming.io"}}</script>
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"ilming","url":"https://ilming.io","description":"Islamic LMS for Tahfiz institutes, madrassas, and Islamic schools.","publisher":{"@type":"Organization","name":"ilming"}}</script>
     <link rel="icon" href="assets/images/favicon/favicon.svg" type="image/svg+xml" />
     <link rel="icon" href="assets/images/favicon/favicon.ico" sizes="any" />
@@ -43,7 +43,7 @@
       href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Readex+Pro:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="assets/css/site.css?v=20260930" />
+    <link rel="stylesheet" href="assets/css/site.css?v=20260930c" />
   </head>
   <body>
     <noscript>
@@ -111,7 +111,7 @@
       <div class="hero-glow hero-glow--2" aria-hidden="true"></div>
       <div class="hero-product-grid">
         <div class="hero-content">
-          <p class="hero-kicker">For Tahfiz institutes</p>
+          <p class="hero-kicker" id="heroKicker">For Tahfiz institutes</p>
           <h1>One desk for Hifz, practice, fees, and families</h1>
           <p class="lead">
             Hifz tracking with Quran map and goals, web Hafazan practice, attendance, exams, families, fees, live classes, and guardian reports — one stack for institutes, teachers, students, and parents.
@@ -642,12 +642,11 @@
     <section class="section">
       <div class="container" style="text-align: center">
         <h2 class="section-title">Start free for 30 students</h2>
-        <p class="section-subtitle">
-          Halaqa is free. India Circle is ₹499. International Circle is $19. Larger plans stay in place when the institute grows.
+        <p class="section-subtitle" id="homePricingLead">
+          Halaqa is free for 30 students. Pricing is shown in the currency of the country you are visiting from.
         </p>
         <div class="cta-buttons" style="justify-content: center">
-          <a href="/pricing/" class="cta-button">India pricing</a>
-          <a href="/pricing/usd/" class="cta-button secondary">USD plans</a>
+          <a href="/pricing/" class="cta-button" id="homePricingCta">See pricing</a>
         </div>
       </div>
     </section>
@@ -871,6 +870,7 @@
       </div>
     </footer>
     <script src="assets/js/config.js"></script>
+    <script src="assets/js/region.js?v=20260930c"></script>
     <script src="assets/js/site.js?v=20260919"></script>
     <script src="assets/js/analytics.js"></script>
   </body>

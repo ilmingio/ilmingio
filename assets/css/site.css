@@ -1384,10 +1384,12 @@ img {
 
 .currency-switch {
   display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: min(100%, 44rem);
   margin: 1.25rem auto 0;
   border: 1px solid var(--cream-dark);
-  border-radius: 999px;
-  overflow: hidden;
+  border-radius: 12px;
   background: #fff;
 }
 
@@ -1398,7 +1400,7 @@ img {
 }
 
 .currency-switch a {
-  padding: 0.45rem 1.1rem;
+  padding: 0.45rem 0.85rem;
   font-size: 0.82rem;
   font-weight: 650;
   color: var(--text-muted);

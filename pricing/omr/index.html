@@ -4,34 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#0a6b5c" />
-    <title>India pricing — ilming Islamic LMS</title>
+    <title>Oman pricing — ilming Islamic LMS</title>
     <meta
       name="description"
-      content="India pricing. Start free for 30 students. Circle is ₹499 a month. Basic, Professional, and Enterprise remain for larger institutes."
+      content="Start free for 30 students. Circle is OMR 7 a month. Larger USD plans add more practice scoring. Starter OMR 38, Growth OMR 115, Institute OMR 211, Campus OMR 308."
     />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://ilming.io/pricing/" />
+    <link rel="canonical" href="https://ilming.io/pricing/omr/" />
     <meta property="og:site_name" content="ilming" />
     <meta property="og:locale" content="en_GB" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://ilming.io/pricing/" />
-    <meta property="og:title" content="India pricing — ilming Islamic LMS" />
-    <meta property="og:description" content="India pricing. Start free for 30 students. Circle is ₹499 a month. Basic, Professional, and Enterprise remain for larger institutes." />
+    <meta property="og:url" content="https://ilming.io/pricing/omr/" />
+    <meta property="og:title" content="Oman pricing — ilming Islamic LMS" />
+    <meta property="og:description" content="Oman pricing in rials. Start free for 30 students. Circle is OMR 7 a month." />
     <meta property="og:image" content="https://ilming.io/assets/images/og/ilming-og.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="ilming — Islamic LMS for madrassas, schools and institutes" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="India pricing — ilming Islamic LMS" />
-    <meta name="twitter:description" content="India pricing. Start free for 30 students. Circle is ₹499 a month. Basic, Professional, and Enterprise remain for larger institutes." />
+    <meta name="twitter:title" content="Oman pricing — ilming Islamic LMS" />
+    <meta name="twitter:description" content="Oman pricing in rials. Start free for 30 students. Circle is OMR 7 a month." />
     <meta name="twitter:image" content="https://ilming.io/assets/images/og/ilming-og.png" />
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://ilming.io/"},{"@type":"ListItem","position":2,"name":"Pricing"}]}</script>
-    <link rel="icon" href="../assets/images/favicon/favicon.svg" type="image/svg+xml" />
-    <link rel="icon" href="../assets/images/favicon/favicon.ico" sizes="any" />
-    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon/favicon-16x16.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicon/apple-touch-icon.png" />
-    <link rel="manifest" href="../assets/images/favicon/site.webmanifest" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://ilming.io/"},{"@type":"ListItem","position":2,"name":"Pricing","item":"https://ilming.io/pricing/"},{"@type":"ListItem","position":3,"name":"Oman plans"}]}</script>
+    <link rel="alternate" href="https://ilming.io/pricing/" hreflang="en-IN" />
+    <link rel="alternate" href="https://ilming.io/pricing/omr/" hreflang="en" />
+    <link rel="icon" href="../../assets/images/favicon/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="../../assets/images/favicon/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/favicon/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/images/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="../../assets/images/favicon/site.webmanifest" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-title" content="ilming" />
     <meta name="mobile-web-app-capable" content="yes" />
@@ -41,58 +43,7 @@
       href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../assets/css/site.css?v=20260930c" />
-    <script>
-      (function () {
-        var KEY = 'ilming-region';
-        var PATH = {
-          inr: '/pricing/',
-          aed: '/pricing/aed/',
-          sar: '/pricing/sar/',
-          qar: '/pricing/qar/',
-          kwd: '/pricing/kwd/',
-          bhd: '/pricing/bhd/',
-          omr: '/pricing/omr/',
-          gbp: '/pricing/gbp/',
-          usd: '/pricing/usd/',
-        };
-        var TZ = {
-          'Asia/Dubai': 'aed',
-          'Asia/Riyadh': 'sar',
-          'Asia/Qatar': 'qar',
-          'Asia/Kuwait': 'kwd',
-          'Asia/Bahrain': 'bhd',
-          'Asia/Muscat': 'omr',
-          'Europe/London': 'gbp',
-          'Asia/Kolkata': 'inr',
-          'Asia/Calcutta': 'inr',
-        };
-        var picked = '';
-        try {
-          var query = new URLSearchParams(location.search).get('region');
-          if (query && PATH[query]) {
-            localStorage.setItem(KEY, query);
-            picked = query;
-          } else {
-            picked = localStorage.getItem(KEY) || '';
-          }
-        } catch (e) {}
-        if (!picked) {
-          try {
-            picked = TZ[Intl.DateTimeFormat().resolvedOptions().timeZone] || '';
-          } catch (e) {}
-        }
-        if (picked && picked !== 'inr' && PATH[picked]) {
-          document.documentElement.classList.add('region-pending');
-          location.replace(PATH[picked] + location.hash);
-          return;
-        }
-        if (!picked) document.documentElement.classList.add('region-pending');
-      })();
-    </script>
-    <style>
-      html.region-pending body { visibility: hidden; }
-    </style>
+    <link rel="stylesheet" href="../../assets/css/site.css?v=20260930c" />
   </head>
   <body>
     <noscript>
@@ -115,7 +66,7 @@
     <header class="site-nav" id="navbar">
       <div class="nav-inner">
         <a href="/" class="brand">
-          <img src="../assets/images/logo/ilming_icon-mark.svg?v=20260902" alt="" class="brand__icon brand__icon--mark" width="44" height="44" aria-hidden="true" />
+          <img src="../../assets/images/logo/ilming_icon-mark.svg?v=20260902" alt="" class="brand__icon brand__icon--mark" width="44" height="44" aria-hidden="true" />
           <span class="brand__lockup">
             <span class="brand__name">ilming</span>
             <span class="brand__tagline">Islamic LMS</span>
@@ -155,14 +106,17 @@
     </nav>
 
     <section class="page-hero">
-      <p>For institutes in India</p>
-      <h1>Start free. Grow when the halaqa grows.</h1>
-      <p>A small circle can begin at no charge. Paid plans stay low. Practice scoring has a monthly cap so a busy microphone cannot run an open bill.</p>
+      <p>For institutes in Oman</p>
+      <h1>Start free. Paid plans from OMR 7.</h1>
+      <p>
+        A small halaqa begins at no charge. Circle is OMR 7 a month, in rials. The talking face is a separate web add-on.
+      </p>
       <nav class="currency-switch" aria-label="Pricing country">
-        <a href="/pricing/" data-region="inr" class="is-active" aria-current="page">India</a>
+        <a href="/pricing/" data-region="inr">India</a>
         <a href="/pricing/aed/" data-region="aed">UAE</a>
         <a href="/pricing/sar/" data-region="sar">Saudi Arabia</a>
         <a href="/pricing/gbp/" data-region="gbp">United Kingdom</a>
+        <a href="/pricing/omr/" data-region="omr" class="is-active" aria-current="page">Oman</a>
         <a href="/pricing/usd/" data-region="usd">International</a>
       </nav>
     </section>
@@ -173,88 +127,99 @@
           <div class="pricing-card featured featured--start reveal">
             <h3>Halaqa</h3>
             <p class="pricing-price">Free</p>
-            <p style="color: var(--text-muted); margin-bottom: 1rem">One circle, up to 30 students</p>
+            <p class="plan-split">Up to 30 students</p>
             <ul class="feature-list">
               <li>Hifz desk, attendance, guardian portal</li>
               <li>Student app for the Hifz desk and Academy</li>
-              <li>8 scored practice clips / student / month</li>
+              <li>8 scored clips / student / month</li>
               <li>10 exams / month</li>
             </ul>
             <a href="/contact/" class="cta-button" style="margin-top: 1.5rem; display: inline-block">Start free</a>
           </div>
           <div class="pricing-card reveal">
             <h3>Circle</h3>
-            <p class="pricing-price">₹499<span style="font-size: 1rem; font-weight: 500">/mo</span></p>
-            <p style="color: var(--text-muted); margin-bottom: 1rem">Weekend and small centres, up to 60 students</p>
+            <p class="pricing-price">OMR 7<span style="font-size: 1rem; font-weight: 500">/mo</span></p>
+            <p class="plan-annual">or OMR 70 / year (2 months free)</p>
+            <p class="plan-split">Up to 40 students</p>
             <ul class="feature-list">
               <li>Everything in Halaqa</li>
-              <li>20 scored clips / student / month</li>
-              <li>30 exams / month</li>
+              <li>15 scored clips / student / month</li>
+              <li>20 exams / month</li>
               <li>Email support</li>
             </ul>
             <a href="/contact/" class="cta-button" style="margin-top: 1.5rem; display: inline-block">Request this plan</a>
           </div>
           <div class="pricing-card reveal">
-            <h3>Basic</h3>
-            <p class="pricing-price">₹999<span style="font-size: 1rem; font-weight: 500">/mo</span></p>
-            <p style="color: var(--text-muted); margin-bottom: 1rem">Small madrassas &amp; centres</p>
+            <h3>Starter</h3>
+            <p class="pricing-price">OMR 38<span style="font-size: 1rem; font-weight: 500">/mo</span></p>
+            <p class="plan-annual">or OMR 380 / year (2 months free)</p>
+            <p class="plan-split">Platform OMR 19 + Quran AI OMR 19 · up to 50 students</p>
             <ul class="feature-list">
-              <li>Up to 100 students</li>
               <li>Hifz desk, attendance, guardian portal</li>
+              <li>Materials, messages, 50 exams / month</li>
               <li>Student app for the Hifz desk and Academy</li>
-              <li>30 scored clips / student / month</li>
-              <li>50 exams / month · email support</li>
+              <li>Practice scoring: 80 clips / student / month</li>
+              <li>Email support</li>
             </ul>
-            <a
-              href="/contact/"
-              class="cta-button"
-              style="margin-top: 1.5rem; display: inline-block"
-              >Request pilot</a
-            >
+            <a href="/contact/" class="cta-button" style="margin-top: 1.5rem; display: inline-block">Request pilot</a>
           </div>
+
           <div class="pricing-card reveal">
-            <h3>Professional</h3>
-            <p class="pricing-price">₹2,499<span style="font-size: 1rem; font-weight: 500">/mo</span></p>
-            <p style="color: var(--text-muted); margin-bottom: 1rem">Growing schools &amp; institutes</p>
+            <h3>Growth</h3>
+            <p class="pricing-price">OMR 115<span style="font-size: 1rem; font-weight: 500">/mo</span></p>
+            <p class="plan-annual">or OMR 1,150 / year (2 months free)</p>
+            <p class="plan-split">Platform OMR 57 + Quran AI OMR 58 · up to 150 students</p>
             <ul class="feature-list">
-              <li>Up to 500 students</li>
+              <li>Everything in Starter</li>
               <li>Certificates, live classes, families</li>
               <li>Teacher payouts &amp; tracking</li>
-              <li>Quran practice scoring — optional, quoted</li>
+              <li>200 exams / month</li>
+              <li>Practice scoring: 80 clips / student / month</li>
+              <li>Priority email support</li>
             </ul>
-            <a
-              href="/contact/"
-              class="cta-button"
-              style="margin-top: 1.5rem; display: inline-block"
-              >Request pilot</a
-            >
+            <a href="/contact/" class="cta-button" style="margin-top: 1.5rem; display: inline-block">Request pilot</a>
           </div>
+
           <div class="pricing-card reveal">
-            <h3>Enterprise</h3>
-            <p class="pricing-price">Custom</p>
-            <p style="color: var(--text-muted); margin-bottom: 1rem">Large institutes &amp; multi-campus</p>
+            <h3>Institute</h3>
+            <p class="pricing-price">OMR 211<span style="font-size: 1rem; font-weight: 500">/mo</span></p>
+            <p class="plan-annual">or OMR 2,110 / year (2 months free)</p>
+            <p class="plan-split">Platform OMR 104 + Quran AI OMR 107 · up to 300 students</p>
             <ul class="feature-list">
-              <li>2,000+ students</li>
+              <li>Everything in Growth</li>
+              <li>Onboarding call for staff</li>
+              <li>Notify families &amp; bulk import</li>
+              <li>Quran AI for all 300 students</li>
+              <li>Invoiced in OMR</li>
+            </ul>
+            <a href="/contact/" class="cta-button" style="margin-top: 1.5rem; display: inline-block">Talk to sales</a>
+          </div>
+
+          <div class="pricing-card reveal">
+            <h3>Campus</h3>
+            <p class="pricing-price">OMR 308<span style="font-size: 1rem; font-weight: 500">/mo</span></p>
+            <p class="plan-annual">or OMR 3,080 / year (2 months free)</p>
+            <p class="plan-split">Platform OMR 135 + Quran AI OMR 173 · up to 500 students</p>
+            <ul class="feature-list">
+              <li>Everything in Institute</li>
               <li>White-label subdomain</li>
-              <li>GBP / AED / SAR invoicing</li>
-              <li>Dedicated onboarding</li>
-              <li>Talking face quoted after a pilot class</li>
+              <li>Quran AI for all 500 students</li>
+              <li>Named success contact</li>
+              <li>500+ students: custom quote</li>
             </ul>
             <a
               href="#"
               class="cta-button blue"
               style="margin-top: 1.5rem; display: inline-block"
               data-mailto="contact"
-              data-mailto-subject="Enterprise Pricing"
+              data-mailto-subject="Campus pricing — Oman"
               >Contact sales</a
             >
           </div>
         </div>
         <p class="pricing-note">
-          Halaqa is free for up to 30 students. Circle is ₹499 for a slightly larger centre.
-          Annual paid plans are about 2 months free.
-          The talking face stays a separate pilot.
-          Use the country switch for dirhams, riyals, pounds, or dollars.
+          A practice retry and the final recording both count toward the 80 clips. Extra clips are OMR 0.008 each.
+          The talking face is not included. It is piloted one class at a time and quoted from the session bill.
           <a href="/contact/">Request a demo</a> before you commit.
         </p>
       </div>
@@ -262,7 +227,135 @@
 
     <section class="section">
       <div class="container">
-        <h2 class="section-title">Compare plans</h2>
+        <h2 class="section-title">What OMR 115 Growth includes (150 students)</h2>
+        <p class="section-subtitle">
+          The headline package for a typical Tahfiz institute. Quran AI is not unlimited: each recording is processed by OpenAI Whisper.
+        </p>
+        <p class="compare-table-hint" aria-hidden="true">Swipe horizontally →</p>
+        <div class="compare-table-wrap reveal">
+          <table class="compare-table">
+            <thead>
+              <tr>
+                <th>Included</th>
+                <th>Detail</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Students</td>
+                <td>Up to 150 (institute, teacher, student, parent portals)</td>
+              </tr>
+              <tr>
+                <td>Quran AI</td>
+                <td>Practice checks and the final recording are transcribed. Only the final recording reaches the teacher.</td>
+              </tr>
+              <tr>
+                <td>Fair use</td>
+                <td>80 scored clips / student / month. Retries and the final recording both count.</td>
+              </tr>
+              <tr>
+                <td>Institute total recitations</td>
+                <td>Up to 12,000 scored clips / month</td>
+              </tr>
+              <tr>
+                <td>LMS</td>
+                <td>Attendance, batches, exams, certificates, live class links, fees, messages</td>
+              </tr>
+              <tr>
+                <td>Overage</td>
+                <td>OMR 0.008 per extra scored clip. Talking face is quoted separately.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">How the price is built</h2>
+        <p class="section-subtitle">
+          Platform covers software. Quran AI covers OpenAI Whisper audio minutes. We do not hide AI inside the LMS fee.
+        </p>
+        <p class="compare-table-hint" aria-hidden="true">Swipe horizontally →</p>
+        <div class="compare-table-wrap reveal">
+          <table class="compare-table">
+            <thead>
+              <tr>
+                <th>Plan</th>
+                <th>Students</th>
+                <th>Platform</th>
+                <th>Quran AI</th>
+                <th>You pay</th>
+                <th>Annual</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Halaqa</td>
+                <td>30</td>
+                <td>Free</td>
+                <td>Included, 8 clips</td>
+                <td>Free</td>
+                <td>Free</td>
+              </tr>
+              <tr>
+                <td>Circle</td>
+                <td>40</td>
+                <td>OMR 4</td>
+                <td>OMR 3</td>
+                <td>OMR 7</td>
+                <td>OMR 70</td>
+              </tr>
+              <tr>
+                <td>Starter</td>
+                <td>50</td>
+                <td>OMR 19</td>
+                <td>OMR 19</td>
+                <td>OMR 38</td>
+                <td>OMR 380</td>
+              </tr>
+              <tr>
+                <td>Growth</td>
+                <td>150</td>
+                <td>OMR 57</td>
+                <td>OMR 58</td>
+                <td>OMR 115</td>
+                <td>OMR 1,150</td>
+              </tr>
+              <tr>
+                <td>Institute</td>
+                <td>300</td>
+                <td>OMR 104</td>
+                <td>OMR 107</td>
+                <td>OMR 211</td>
+                <td>OMR 2,110</td>
+              </tr>
+              <tr>
+                <td>Campus</td>
+                <td>500</td>
+                <td>OMR 135</td>
+                <td>OMR 173</td>
+                <td>OMR 308</td>
+                <td>OMR 3,080</td>
+              </tr>
+              <tr>
+                <td>Enterprise</td>
+                <td>500+</td>
+                <td>Custom</td>
+                <td>OMR 0.350 / student</td>
+                <td>Custom</td>
+                <td>Custom</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Compare capabilities</h2>
         <p class="compare-table-hint" aria-hidden="true">Swipe horizontally to compare →</p>
         <div class="compare-table-wrap reveal">
           <table class="compare-table">
@@ -271,19 +364,30 @@
                 <th>Capability</th>
                 <th>Halaqa</th>
                 <th>Circle</th>
-                <th>Basic</th>
-                <th>Professional</th>
-                <th>Enterprise</th>
+                <th>Starter</th>
+                <th>Growth</th>
+                <th>Institute</th>
+                <th>Campus</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>Students</td>
                 <td>30</td>
-                <td>60</td>
-                <td>100</td>
+                <td>40</td>
+                <td>50</td>
+                <td>150</td>
+                <td>300</td>
                 <td>500</td>
-                <td>2,000+</td>
+              </tr>
+              <tr>
+                <td>Monthly price</td>
+                <td>Free</td>
+                <td>OMR 7</td>
+                <td>OMR 38</td>
+                <td>OMR 115</td>
+                <td>OMR 211</td>
+                <td>OMR 308</td>
               </tr>
               <tr>
                 <td>Hifz / Tahfiz desk</td>
@@ -292,33 +396,29 @@
                 <td class="yes">✓</td>
                 <td class="yes">✓</td>
                 <td class="yes">✓</td>
-              </tr>
-              <tr>
-                <td>Student app (Hifz desk and Academy)</td>
-                <td class="yes">✓</td>
-                <td class="yes">✓</td>
-                <td class="yes">✓</td>
-                <td class="yes">✓</td>
                 <td class="yes">✓</td>
               </tr>
               <tr>
-                <td>Scored clips / student / month</td>
-                <td>8</td>
-                <td>20</td>
-                <td>30</td>
-                <td>Quoted</td>
-                <td>Quoted</td>
+                <td>Quran AI (Whisper)</td>
+                <td class="yes">✓</td>
+                <td class="yes">✓</td>
+                <td class="yes">✓</td>
+                <td class="yes">✓</td>
+                <td class="yes">✓</td>
+                <td class="yes">✓</td>
               </tr>
               <tr>
-                <td>Talking face (web add-on)</td>
-                <td>—</td>
-                <td>—</td>
-                <td>—</td>
-                <td>Pilot</td>
-                <td>Pilot</td>
+                <td>Recitations included</td>
+                <td>240</td>
+                <td>600</td>
+                <td>4,000</td>
+                <td>12,000</td>
+                <td>24,000</td>
+                <td>40,000</td>
               </tr>
               <tr>
-                <td>Attendance &amp; families</td>
+                <td>Guardian portal</td>
+                <td class="yes">✓</td>
                 <td class="yes">✓</td>
                 <td class="yes">✓</td>
                 <td class="yes">✓</td>
@@ -328,47 +428,26 @@
               <tr>
                 <td>Exams / month</td>
                 <td>10</td>
-                <td>30</td>
+                <td>20</td>
                 <td>50</td>
+                <td>200</td>
                 <td>200</td>
                 <td>Custom</td>
               </tr>
               <tr>
-                <td>Exam security &amp; verification</td>
-                <td class="yes">✓</td>
-                <td class="yes">✓</td>
+                <td>Certificates &amp; live classes</td>
+                <td>—</td>
+                <td>—</td>
+                <td>—</td>
                 <td class="yes">✓</td>
                 <td class="yes">✓</td>
                 <td class="yes">✓</td>
               </tr>
               <tr>
-                <td>Digital certificates</td>
+                <td>Teacher payouts</td>
                 <td>—</td>
                 <td>—</td>
                 <td>—</td>
-                <td class="yes">✓</td>
-                <td class="yes">✓</td>
-              </tr>
-              <tr>
-                <td>Live class scheduling</td>
-                <td>—</td>
-                <td>—</td>
-                <td>—</td>
-                <td class="yes">✓</td>
-                <td class="yes">✓</td>
-              </tr>
-              <tr>
-                <td>Teacher payouts &amp; tracking</td>
-                <td>—</td>
-                <td>—</td>
-                <td>—</td>
-                <td class="yes">✓</td>
-                <td class="yes">✓</td>
-              </tr>
-              <tr>
-                <td>Guardian portal</td>
-                <td class="yes">✓</td>
-                <td class="yes">✓</td>
                 <td class="yes">✓</td>
                 <td class="yes">✓</td>
                 <td class="yes">✓</td>
@@ -379,23 +458,17 @@
                 <td>—</td>
                 <td>—</td>
                 <td>—</td>
+                <td>—</td>
                 <td class="yes">✓</td>
               </tr>
               <tr>
-                <td>AI assistants (beta)</td>
+                <td>Invoicing</td>
                 <td>—</td>
-                <td>—</td>
-                <td>—</td>
-                <td>Optional</td>
-                <td>Optional</td>
-              </tr>
-              <tr>
-                <td>Payments</td>
-                <td>Razorpay / Stripe / FPX</td>
-                <td>Razorpay / Stripe / FPX</td>
-                <td>Razorpay / Stripe / FPX</td>
-                <td>Razorpay / Stripe / FPX</td>
-                <td>Stripe + GoCardless + GBP/AED/SAR invoices</td>
+                <td>OMR card</td>
+                <td>OMR card / invoice</td>
+                <td>OMR card / invoice</td>
+                <td>Invoiced in OMR</td>
+                <td>Invoiced in OMR</td>
               </tr>
             </tbody>
           </table>
@@ -406,131 +479,97 @@
     <section class="section section-faq" id="faq">
       <div class="container">
         <div class="faq-header">
-          <h2 class="section-title">Pricing FAQ</h2>
-          <p class="section-subtitle">
-            Trials, billing regions, and what is included in each plan.
-          </p>
+          <h2 class="section-title">Oman plan FAQ</h2>
+          <p class="section-subtitle">Prices in rials for institutes in Oman.</p>
         </div>
         <div class="faq-list" data-faq-accordion>
           <div class="faq-item">
             <h3 class="faq-item__heading">
-              <button
-                type="button"
-                class="faq-trigger"
-                id="faq-pricing-1"
-                aria-expanded="false"
-                aria-controls="faq-panel-pricing-1"
-              >
+              <button type="button" class="faq-trigger" id="faq-omr-1" aria-expanded="false" aria-controls="faq-panel-omr-1">
+                <span class="faq-trigger__text">Why is Quran AI a separate line inside the price?</span>
+                <span class="faq-trigger__icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq-panel" id="faq-panel-omr-1" role="region" aria-labelledby="faq-omr-1" hidden>
+              <div class="faq-panel__inner">
+                <div class="faq-panel__content">
+                  <p>
+                    Each student recording is transcribed with <strong>OpenAI Whisper</strong> (OMR 0.002 per audio minute).
+                    A typical sabk is about 40 seconds, four times a school day. That cost cannot sit inside a low LMS-only fee.
+                    The bundle still looks like one monthly number; the split is shown so institutes know what they are paying for.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-item__heading">
+              <button type="button" class="faq-trigger" id="faq-omr-2" aria-expanded="false" aria-controls="faq-panel-omr-2">
+                <span class="faq-trigger__text">What happens if students record more than 80 times a month?</span>
+                <span class="faq-trigger__icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq-panel" id="faq-panel-omr-2" role="region" aria-labelledby="faq-omr-2" hidden>
+              <div class="faq-panel__inner">
+                <div class="faq-panel__content">
+                  <p>
+                    Extra scored clips are billed at <strong>OMR 0.008 each</strong>. A practice retry counts the same as the recording sent to the teacher. A daily cap stops a stuck microphone from running up audio minutes.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-item__heading">
+              <button type="button" class="faq-trigger" id="faq-omr-3" aria-expanded="false" aria-controls="faq-panel-omr-3">
+                <span class="faq-trigger__text">Is this the same as India pricing?</span>
+                <span class="faq-trigger__icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq-panel" id="faq-panel-omr-3" role="region" aria-labelledby="faq-omr-3" hidden>
+              <div class="faq-panel__inner">
+                <div class="faq-panel__content">
+                  <p>
+                    India has <a href="/pricing/">its own rupee list</a>, from a free halaqa to ₹499.
+                    This page is the Oman list, in rials, and
+                    <strong>includes Quran AI fair use</strong> in the monthly price.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-item__heading">
+              <button type="button" class="faq-trigger" id="faq-omr-4" aria-expanded="false" aria-controls="faq-panel-omr-4">
+                <span class="faq-trigger__text">Can we start with LMS only and add AI later?</span>
+                <span class="faq-trigger__icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq-panel" id="faq-panel-omr-4" role="region" aria-labelledby="faq-omr-4" hidden>
+              <div class="faq-panel__inner">
+                <div class="faq-panel__content">
+                  <p>
+                    Yes. Quote platform only using the split on each card (for example Growth platform OMR 57).
+                    Add Quran AI when recitation practice goes live. AI-only add-on for 51–150 students is OMR 58 / month.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-item__heading">
+              <button type="button" class="faq-trigger" id="faq-omr-5" aria-expanded="false" aria-controls="faq-panel-omr-5">
                 <span class="faq-trigger__text">Is there a free trial?</span>
                 <span class="faq-trigger__icon" aria-hidden="true"></span>
               </button>
             </h3>
-            <div class="faq-panel" id="faq-panel-pricing-1" role="region" aria-labelledby="faq-pricing-1" hidden>
+            <div class="faq-panel" id="faq-panel-omr-5" role="region" aria-labelledby="faq-omr-5" hidden>
               <div class="faq-panel__inner">
                 <div class="faq-panel__content">
                   <p>
-                    Halaqa is free for up to 30 students and does not expire. A 14-day pilot is for trying a larger plan on your own batches. Contact us to provision
-                    your institute admin on
-                    <a href="/login" data-app-link="/login">app.ilming.io</a>. The public register
-                    page is for student enrollment, not institute self-signup.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="faq-item">
-            <h3 class="faq-item__heading">
-              <button
-                type="button"
-                class="faq-trigger"
-                id="faq-pricing-2"
-                aria-expanded="false"
-                aria-controls="faq-panel-pricing-2"
-              >
-                <span class="faq-trigger__text">How does GCC billing work?</span>
-                <span class="faq-trigger__icon" aria-hidden="true"></span>
-              </button>
-            </h3>
-            <div class="faq-panel" id="faq-panel-pricing-2" role="region" aria-labelledby="faq-pricing-2" hidden>
-              <div class="faq-panel__inner">
-                <div class="faq-panel__content">
-                  <p>
-                    Enterprise plans bill in <strong>GBP (UK)</strong>, <strong>AED or SAR (UAE/GCC)</strong>,
-                    with white-label subdomain and dedicated onboarding. Contact sales for a formal quote.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="faq-item">
-            <h3 class="faq-item__heading">
-              <button
-                type="button"
-                class="faq-trigger"
-                id="faq-pricing-3"
-                aria-expanded="false"
-                aria-controls="faq-panel-pricing-3"
-              >
-                <span class="faq-trigger__text">Are payment gateway fees included?</span>
-                <span class="faq-trigger__icon" aria-hidden="true"></span>
-              </button>
-            </h3>
-            <div class="faq-panel" id="faq-panel-pricing-3" role="region" aria-labelledby="faq-pricing-3" hidden>
-              <div class="faq-panel__inner">
-                <div class="faq-panel__content">
-                  <p>
-                    ilming subscription fees are separate from gateway charges. Razorpay, Stripe,
-                    GoCardless, and ToyyibPay (FPX) transaction fees apply at their standard rates
-                    when students or guardians pay through your connected account. UK and GCC
-                    enterprise plans can be invoiced in GBP, AED, or SAR.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="faq-item">
-            <h3 class="faq-item__heading">
-              <button
-                type="button"
-                class="faq-trigger"
-                id="faq-pricing-4"
-                aria-expanded="false"
-                aria-controls="faq-panel-pricing-4"
-              >
-                <span class="faq-trigger__text">Can I change plans later?</span>
-                <span class="faq-trigger__icon" aria-hidden="true"></span>
-              </button>
-            </h3>
-            <div class="faq-panel" id="faq-panel-pricing-4" role="region" aria-labelledby="faq-pricing-4" hidden>
-              <div class="faq-panel__inner">
-                <div class="faq-panel__content">
-                  <p>
-                    Yes. Upgrade or downgrade from institute billing settings as your student count,
-                    exam volume, or region needs change.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="faq-item">
-            <h3 class="faq-item__heading">
-              <button
-                type="button"
-                class="faq-trigger"
-                id="faq-pricing-5"
-                aria-expanded="false"
-                aria-controls="faq-panel-pricing-5"
-              >
-                <span class="faq-trigger__text">Do you offer annual discounts?</span>
-                <span class="faq-trigger__icon" aria-hidden="true"></span>
-              </button>
-            </h3>
-            <div class="faq-panel" id="faq-panel-pricing-5" role="region" aria-labelledby="faq-pricing-5" hidden>
-              <div class="faq-panel__inner">
-                <div class="faq-panel__content">
-                  <p>
-                    Annual billing is roughly <strong>two months free</strong> compared to paying
-                    monthly. Ask for a formal quote on your demo call.
+                    A <strong>14-day pilot</strong> on your batches. Contact us to provision institute admin on
+                    <a href="/login" data-app-link="/login">app.ilming.io</a>. Whisper usage during the pilot is
+                    included up to the Starter fair-use cap.
                   </p>
                 </div>
               </div>
@@ -538,20 +577,18 @@
           </div>
         </div>
         <p class="faq-footer">
-          Need a custom quote for 500+ students?
-          <a href="/contact/">Talk to sales</a>
-          or
-          <a href="/contact/">request a pilot</a>.
+          Need a quote for 500+ students or multi-campus?
+          <a href="/contact/">Talk to sales</a>.
         </p>
       </div>
     </section>
 
     <section class="cta-section">
       <div class="container">
-        <h2>Start free</h2>
-        <p>Halaqa needs no card. We set up the institute admin for a circle of up to 30 students.</p>
+        <h2>Start with a 14-day pilot</h2>
+        <p>We set up your institute admin. No public self-signup for institutes.</p>
         <div class="cta-buttons">
-          <a href="/contact/" class="cta-button">Start free</a>
+          <a href="/contact/" class="cta-button">Request a 14-day pilot</a>
           <a href="/contact/" class="cta-button secondary">Talk to sales</a>
         </div>
       </div>
@@ -573,7 +610,7 @@
         <div class="footer-grid">
           <div class="footer-brand">
             <a href="/" class="brand brand--footer">
-              <img src="../assets/images/logo/ilming_icon.svg?v=20260902" alt="" class="brand__icon" width="44" height="44" aria-hidden="true" />
+              <img src="../../assets/images/logo/ilming_icon.svg?v=20260902" alt="" class="brand__icon" width="44" height="44" aria-hidden="true" />
               <span class="brand__lockup">
                 <span class="brand__name">ilming</span>
                 <span class="brand__tagline">Islamic LMS</span>
@@ -634,9 +671,9 @@
         </div>
       </div>
     </footer>
-    <script src="../assets/js/config.js"></script>
-    <script src="../assets/js/region.js?v=20260930c"></script>
-    <script src="../assets/js/site.js?v=20260919"></script>
-    <script src="../assets/js/analytics.js"></script>
+    <script src="../../assets/js/config.js"></script>
+    <script src="../../assets/js/region.js?v=20260930c"></script>
+    <script src="../../assets/js/site.js?v=20260919"></script>
+    <script src="../../assets/js/analytics.js"></script>
   </body>
 </html>
