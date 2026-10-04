@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#0a6b5c" />
     <title>Platform Flow &amp; Demo Guide — ilming</title>
-    <meta name="description" content="Complete ilming platform architecture, flow charts, and demo guide — API, CRM web app, and student mobile app for Islamic LMS." />
+    <meta name="description" content="Complete ilming platform architecture, flow charts, and demo guide — API, CRM web app, and mobile apps for institute, teacher, student, and guardian." />
     <meta name="robots" content="noindex, nofollow" />
     <link rel="icon" href="../assets/images/favicon/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -70,7 +70,7 @@
           <span class="demo-badge">Tahfiz + Academy LMS</span>
         </div>
         <h1>ilming Platform — Complete Flow</h1>
-        <p>Architecture, user journeys, and demo script for presenting the full Islamic LMS stack: backend API, web CRM, and student mobile app.</p>
+        <p>Architecture, user journeys, and demo script for presenting the full Islamic LMS stack: backend API, web CRM, and mobile apps for institute, teacher, student, and guardian.</p>
         <div class="demo-quick-links">
           <a href="https://app.ilming.io" class="gold" target="_blank" rel="noopener" data-app-link="/">Open CRM →</a>
           <a href="https://app.ilming.io/demo-guide" class="outline" target="_blank" rel="noopener" data-app-link="/demo-guide">Demo script (CRM)</a>
@@ -139,8 +139,26 @@
             <article class="repo-card">
               <span class="repo-card__tag repo-card__tag--mobile">Mobile</span>
               <h4>Ilming-student-mobile</h4>
-              <p>Expo SDK 57. Hifz desk and academy (courses, exams, fees). Guided Hafazan practice is on the web, not in this app yet.</p>
-              <code>Expo / iOS &amp; Android</code>
+              <p>Expo. Hifz desk and Academy. Guided Hafazan practice is on the web.</p>
+              <code>io.ilming.student</code>
+            </article>
+            <article class="repo-card">
+              <span class="repo-card__tag repo-card__tag--mobile">Mobile</span>
+              <h4>Ilming-teacher-mobile</h4>
+              <p>Expo. Review queue, classes, attendance, exams, and live classes.</p>
+              <code>io.ilming.teacher</code>
+            </article>
+            <article class="repo-card">
+              <span class="repo-card__tag repo-card__tag--mobile">Mobile</span>
+              <h4>Ilming-institute-mobile</h4>
+              <p>Expo. Reviews, attendance, exams, students, teachers, courses, and batches.</p>
+              <code>io.ilming.institute</code>
+            </article>
+            <article class="repo-card">
+              <span class="repo-card__tag repo-card__tag--mobile">Mobile</span>
+              <h4>Ilming-guardian-mobile</h4>
+              <p>Expo. Today’s Hifz, attendance, fees, results, lessons, and family.</p>
+              <code>io.ilming.guardian</code>
             </article>
             <article class="repo-card">
               <span class="repo-card__tag repo-card__tag--site">Marketing</span>
@@ -157,7 +175,7 @@
 flowchart TB
     subgraph Clients["Client applications"]
         CRM["Ilming-crm\nNext.js · app.ilming.io"]
-        MOB["Student Mobile\nExpo · iOS/Android"]
+        MOB["Mobile apps\nInstitute · Teacher\nStudent · Guardian"]
         SITE["Marketing\nilming.io"]
     end
 
@@ -405,8 +423,8 @@ flowchart LR
         <section id="mobile">
           <div class="demo-section-head">
             <span class="eyebrow">Mobile app</span>
-            <h2>Student mobile journeys</h2>
-            <p>Expo app with dual student/guardian modes. Tahfiz is the hero feature; academy modules mirror CRM student portal.</p>
+            <h2>Four mobile apps</h2>
+            <p>Separate Expo apps for the institute, teachers, students, and guardians. The student app is the Hifz desk and Academy. Guided Hafazan practice stays on the web.</p>
           </div>
 
           <div class="demo-card">
