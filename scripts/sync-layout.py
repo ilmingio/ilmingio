@@ -103,7 +103,7 @@ def header_block(ap: str, noscript: bool) -> str:
         <p class="site-announcement__text">
           <strong>For Tahfiz institutes</strong> in the UK, UAE, India, and the GCC
         </p>
-        <a href="/contact/?intent=demo" class="site-announcement__link" data-track="book_demo">Book a 15-minute demo</a>
+        <a href="/contact/?intent=demo" class="site-announcement__link" data-track="book_demo">Book a free demo</a>
         <button type="button" class="site-announcement__dismiss" id="announceDismiss" aria-label="Dismiss announcement">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
         </button>
@@ -130,7 +130,7 @@ def header_block(ap: str, noscript: bool) -> str:
         </ul>
         <div class="nav-actions nav-desktop-only">
           <a href="/login" class="nav-btn nav-btn-outline" data-app-link="/login">Log in</a>
-          <a href="/contact/?intent=batch" class="nav-btn nav-btn-primary" data-track="start_batch">Start free</a>
+          <a href="/contact/?intent=demo" class="nav-btn nav-btn-primary" data-track="book_demo">Book a demo</a>
         </div>
         <button type="button" class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
           <svg class="menu-toggle__icon menu-toggle__icon--open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
@@ -149,13 +149,13 @@ def header_block(ap: str, noscript: bool) -> str:
       <a href="/about/">About</a>
       <a href="/contact/">Contact</a>
       <a href="/login" class="nav-btn nav-btn-outline" data-app-link="/login">Log in</a>
-      <a href="/contact/?intent=batch" class="nav-btn nav-btn-primary" data-track="start_batch">Start free</a>
+      <a href="/contact/?intent=demo" class="nav-btn nav-btn-primary" data-track="book_demo">Book a demo</a>
     </nav>"""
 
 
 def footer_block(ap: str, compact_cta: bool) -> str:
     cta_title = "Questions about your institute?" if compact_cta else "Ready to modernise your institute?"
-    cta_sub = "Start with one Hifz batch for free. We set up the institute admin with you."
+    cta_sub = "A free 30-day pilot for one Hifz batch. We set up the institute, import students, and train teachers."
     return f"""    <footer class="site-footer">
       <div class="footer-cta">
         <div class="container footer-cta__inner">
@@ -164,7 +164,7 @@ def footer_block(ap: str, compact_cta: bool) -> str:
             <p>{cta_sub}</p>
           </div>
           <div class="footer-cta__actions">
-            <a href="/contact/?intent=batch" class="cta-button gold" data-track="start_batch">Start with one batch</a>
+            <a href="/contact/?intent=demo" class="cta-button gold" data-track="book_demo">Book a free demo</a>
             <a href="/pricing/" class="cta-button secondary footer-cta__secondary">View pricing</a>
           </div>
         </div>

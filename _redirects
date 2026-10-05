@@ -7,3 +7,5 @@
 /news/*       /    301
 /tools/*      /    301
 /nonacademic* /    301
+/login        https://app.ilming.io/login    302
+/login/       https://app.ilming.io/login    302

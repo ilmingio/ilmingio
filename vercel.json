@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "/login",
+      "destination": "https://app.ilming.io/login",
+      "permanent": false
+    },
+    {
+      "source": "/login/",
+      "destination": "https://app.ilming.io/login",
+      "permanent": false
+    }
+  ]
+}

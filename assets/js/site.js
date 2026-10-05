@@ -223,7 +223,7 @@
       messageInput.value = 'Please set up one Hifz batch for our institute.';
     }
     if (messageInput && !messageInput.value && intent === 'demo') {
-      messageInput.value = 'I would like a 15-minute demo of the Hifz workflow.';
+      messageInput.value = 'I would like a free demo and a 30-day pilot for one Hifz batch.';
     }
 
     contactForm.addEventListener('submit', function (e) {
@@ -234,7 +234,7 @@
       const requestIntent = String(fd.get('intent') || '').trim();
       const notes = [];
       if (requestIntent === 'batch') notes.push('Request: set up one Hifz batch');
-      if (requestIntent === 'demo') notes.push('Request: 15-minute demo');
+      if (requestIntent === 'demo') notes.push('Request: free demo and 30-day pilot');
       if (students) notes.push('Students: ' + students);
       if (teachers) notes.push('Teachers: ' + teachers);
       let message = String(fd.get('message') || '').trim();
