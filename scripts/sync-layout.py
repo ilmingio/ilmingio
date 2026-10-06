@@ -203,6 +203,7 @@ def footer_block(ap: str, compact_cta: bool) -> str:
               <li><a href="/platform/">Platform</a></li>
               <li><a href="/features/">Features</a></li>
               <li><a href="/ai/">AI Hafazan teacher</a></li>
+              <li><a href="/tahfiz-management-software/">Tahfiz management</a></li>
               <li><a href="/present/">Product tour</a></li>
               <li><a href="/demo-platform/">Demo guide</a></li>
               <li><a href="/pricing/">Pricing</a></li>
