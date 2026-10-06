@@ -1992,6 +1992,24 @@ img {
   letter-spacing: 0.04em;
 }
 
+.footer-social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.9rem;
+  margin-top: 0.85rem;
+}
+
+.footer-social a {
+  color: #cbd5e1;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.footer-social a:hover {
+  color: var(--gold-light);
+}
+
 .footer-col h4 {
   font-family: var(--font-body);
   font-size: 0.75rem;

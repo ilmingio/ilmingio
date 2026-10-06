@@ -189,6 +189,12 @@ def org_schema() -> dict:
         "logo": LOGO,
         "description": "Operating system for Tahfiz institutes, madrassas, and Islamic schools.",
         "areaServed": ["GB", "AE", "IN", "SA", "QA", "KW", "BH", "OM"],
+        "sameAs": [
+            "https://www.instagram.com/ilming.io/",
+            "https://www.facebook.com/profile.php?id=61595146591176",
+            "https://x.com/ilming_io",
+            "https://www.linkedin.com/in/ilming-io/",
+        ],
     }
 
 

@@ -4,7 +4,7 @@ import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-CSS_VER = "20260920"
+CSS_VER = "20261006"
 SW_VER = "20260815"
 
 PAGES = [
@@ -190,6 +190,12 @@ def footer_block(ap: str, compact_cta: bool) -> str:
               <span class="footer-region">GCC</span>
             </div>
             <p class="footer-tagline">ilming.io — Islamic learning software</p>
+            <nav class="footer-social" aria-label="ilming on social">
+              <a href="https://www.instagram.com/ilming.io/" rel="me noopener noreferrer" target="_blank">Instagram</a>
+              <a href="https://www.facebook.com/profile.php?id=61595146591176" rel="me noopener noreferrer" target="_blank">Facebook</a>
+              <a href="https://x.com/ilming_io" rel="me noopener noreferrer" target="_blank">X</a>
+              <a href="https://www.linkedin.com/in/ilming-io/" rel="me noopener noreferrer" target="_blank">LinkedIn</a>
+            </nav>
           </div>
           <div class="footer-col">
             <h4>Product</h4>
