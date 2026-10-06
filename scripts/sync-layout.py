@@ -240,7 +240,7 @@ def footer_block(ap: str, compact_cta: bool) -> str:
         </div>
         <div class="footer-bottom">
           <p>© <span id="footerYear">2026</span> ilming. All rights reserved.</p>
-          <p class="footer-note">ilming.io is an Islamic LMS software platform — not affiliated with third-party stationery brands.</p>
+          <p class="footer-note">ilming.io — Islamic learning software for Tahfiz institutes, madrassas, and Islamic schools.</p>
         </div>
       </div>
     </footer>"""
