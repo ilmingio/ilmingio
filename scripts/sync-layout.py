@@ -195,6 +195,7 @@ def footer_block(ap: str, compact_cta: bool) -> str:
               <a href="https://www.facebook.com/profile.php?id=61595146591176" rel="me noopener noreferrer" target="_blank">Facebook</a>
               <a href="https://x.com/ilming_io" rel="me noopener noreferrer" target="_blank">X</a>
               <a href="https://www.linkedin.com/in/ilming-io/" rel="me noopener noreferrer" target="_blank">LinkedIn</a>
+              <a href="https://www.youtube.com/@ilming-io" rel="me noopener noreferrer" target="_blank">YouTube</a>
             </nav>
           </div>
           <div class="footer-col">

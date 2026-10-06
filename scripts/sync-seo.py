@@ -200,6 +200,7 @@ def org_schema() -> dict:
             "https://www.facebook.com/profile.php?id=61595146591176",
             "https://x.com/ilming_io",
             "https://www.linkedin.com/in/ilming-io/",
+            "https://www.youtube.com/@ilming-io",
         ],
     }
 
