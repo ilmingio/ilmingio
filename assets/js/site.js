@@ -13,13 +13,7 @@
   });
 
   document.querySelectorAll('[data-mailto]').forEach(function (el) {
-    const key = el.getAttribute('data-mailto');
-    const email =
-      key === 'support'
-        ? cfg.supportEmail
-        : key === 'info'
-          ? cfg.infoEmail
-          : cfg.contactEmail;
+    const email = cfg.infoEmail || 'info@ilming.io';
     const subject = el.getAttribute('data-mailto-subject') || '';
     el.href =
       'mailto:' +
@@ -288,13 +282,13 @@
           setContactStatus(
             'error',
             (result.data && result.data.message) ||
-              'We could not send your message just now. Please email contact@ilming.io.'
+              'We could not send your message just now. Please email info@ilming.io.'
           );
         })
         .catch(function () {
           setContactStatus(
             'error',
-            'We could not send your message just now. Please email contact@ilming.io.'
+            'We could not send your message just now. Please email info@ilming.io.'
           );
         })
         .finally(function () {
