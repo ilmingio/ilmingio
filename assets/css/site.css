@@ -1995,19 +1995,33 @@ img {
 .footer-social {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.35rem 0.9rem;
-  margin-top: 0.85rem;
+  gap: 0.5rem;
+  margin-top: 0.9rem;
 }
 
 .footer-social a {
-  color: #cbd5e1;
-  font-size: 0.82rem;
-  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  color: #e2e8f0;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   text-decoration: none;
 }
 
 .footer-social a:hover {
   color: var(--gold-light);
+  border-color: rgba(201, 168, 76, 0.55);
+  background: rgba(201, 168, 76, 0.12);
+}
+
+.footer-social svg {
+  width: 16px;
+  height: 16px;
+  display: block;
 }
 
 .footer-col h4 {
