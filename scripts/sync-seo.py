@@ -6,9 +6,9 @@ import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-SITE = "https://ilming.io"
+SITE = "https://www.ilming.io"
 OG_IMAGE = f"{SITE}/assets/images/og/ilming-og.png"
-LOGO = f"{SITE}/assets/images/logo/ilming_logo.svg"
+LOGO = f"{SITE}/assets/images/favicon/apple-touch-icon.png"
 
 # rel path -> SEO config (title/description for OG when not parsed from page)
 PAGE_SEO = {
@@ -184,9 +184,15 @@ def org_schema() -> dict:
     return {
         "@context": "https://schema.org",
         "@type": "Organization",
+        "@id": f"{SITE}/#organization",
         "name": "ilming",
-        "url": SITE,
-        "logo": LOGO,
+        "url": f"{SITE}/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": LOGO,
+            "width": 180,
+            "height": 180,
+        },
         "description": "Operating system for Tahfiz institutes, madrassas, and Islamic schools.",
         "areaServed": ["GB", "AE", "IN", "SA", "QA", "KW", "BH", "OM"],
         "sameAs": [
@@ -205,7 +211,7 @@ def software_schema() -> dict:
         "name": "ilming",
         "applicationCategory": "EducationalApplication",
         "operatingSystem": "Web, iOS, Android",
-        "url": SITE,
+        "url": f"{SITE}/",
         "description": "Tahfiz institute platform. Hifz and Academy on iOS and Android. AI Hafazan practice on the web. Teacher approval stays with the Ustadh.",
         "offers": {
             "@type": "Offer",
@@ -213,7 +219,7 @@ def software_schema() -> dict:
             "priceCurrency": "INR",
             "description": "Free for up to 30 students. Paid plans from ₹499/month in India and $19/month internationally.",
         },
-        "provider": {"@type": "Organization", "name": "ilming", "url": SITE},
+        "provider": {"@id": f"{SITE}/#organization"},
     }
 
 
@@ -222,9 +228,9 @@ def website_schema() -> dict:
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": "ilming",
-        "url": SITE,
+        "url": f"{SITE}/",
         "description": "Operating system for Tahfiz institutes, madrassas, and Islamic schools.",
-        "publisher": {"@type": "Organization", "name": "ilming"},
+        "publisher": {"@id": f"{SITE}/#organization"},
     }
 
 
@@ -236,7 +242,7 @@ def article_schema(cfg: dict, title: str, description: str) -> dict:
         "description": description,
         "datePublished": cfg.get("published", "2026-01-01"),
         "dateModified": cfg.get("published", "2026-01-01"),
-        "author": {"@type": "Organization", "name": "ilming", "url": SITE},
+        "author": {"@id": f"{SITE}/#organization"},
         "publisher": {
             "@type": "Organization",
             "name": "ilming",
@@ -395,7 +401,7 @@ def update_robots() -> None:
 Allow: /
 Disallow: /demo-platform/
 
-Sitemap: https://ilming.io/sitemap.xml
+Sitemap: https://www.ilming.io/sitemap.xml
 """
     (ROOT / "robots.txt").write_text(content, encoding="utf-8")
     print("updated: robots.txt")

@@ -9,7 +9,7 @@
 
   global.ILMING_SITE = {
     appUrl: isLocal ? 'http://localhost:3000' : 'https://app.ilming.io',
-    siteUrl: isLocal ? 'http://localhost:8000' : 'https://ilming.io',
+    siteUrl: isLocal ? 'http://localhost:8000' : 'https://www.ilming.io',
     apiUrl: isLocal ? 'http://localhost:8080' : 'https://api.ilming.io',
     infoEmail: 'info@ilming.io',
     /** Institute pilots are provisioned by the team — not via /register (student signup). */

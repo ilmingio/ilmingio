@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /demo-platform/
 
-Sitemap: https://ilming.io/sitemap.xml
+Sitemap: https://www.ilming.io/sitemap.xml
