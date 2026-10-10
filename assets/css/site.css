@@ -1314,28 +1314,49 @@ img {
 }
 
 /* Pricing */
+.pricing-head {
+  text-align: center;
+  max-width: 34rem;
+  margin: 0 auto 2.5rem;
+}
+
+.pricing-head h2 {
+  font-size: clamp(1.6rem, 2.5vw, 2rem);
+  color: var(--secondary);
+  margin-bottom: 0.45rem;
+}
+
+.pricing-head p {
+  color: var(--text-muted);
+  font-size: 1.02rem;
+}
+
 .pricing-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
-  gap: 1.5rem;
-  padding-top: 0.85rem;
-  align-items: stretch;
+  grid-template-columns: 1fr;
+  gap: 1.35rem;
+  padding-top: 0.75rem;
+  align-items: start;
+  max-width: 1080px;
+  margin: 0 auto;
 }
 
 .pricing-card {
   background: #fff;
-  border: 1px solid var(--cream-dark);
-  border-radius: var(--radius-lg);
-  padding: 1.6rem 1.45rem 1.45rem;
+  border: 1px solid rgba(12, 24, 41, 0.06);
+  border-radius: 24px;
+  padding: 1.85rem 1.7rem 1.55rem;
   display: flex;
   flex-direction: column;
   min-width: 0;
-  height: 100%;
+  height: auto;
+  box-shadow: 0 10px 28px rgba(12, 24, 41, 0.05);
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .pricing-card:hover {
-  box-shadow: var(--shadow-md);
+  transform: translateY(-3px);
+  box-shadow: 0 18px 36px rgba(12, 24, 41, 0.08);
 }
 
 .pricing-card.featured {
@@ -1368,7 +1389,9 @@ img {
 }
 
 .pricing-card.featured.featured--recommend {
-  background: #f4faf8;
+  background: #fff;
+  border-color: var(--primary);
+  box-shadow: 0 18px 40px rgba(10, 107, 92, 0.12);
 }
 
 .pricing-card.featured.featured--recommend::before {
@@ -1388,28 +1411,43 @@ img {
 
 .pricing-card h3 {
   font-family: var(--font-display);
-  font-size: 1.35rem;
+  font-size: 1.45rem;
   color: var(--secondary);
+  margin-top: 0.15rem;
 }
 
 .pricing-price {
-  font-size: 2.15rem;
+  font-size: 2.55rem;
   font-weight: 800;
   color: var(--primary);
-  margin: 0.55rem 0 0.35rem;
+  margin: 0.7rem 0 0;
   font-family: var(--font-display);
-  line-height: 1.1;
+  line-height: 1;
+  letter-spacing: -0.03em;
 }
 
+.pricing-price span,
 .pricing-price .price-unit {
+  display: block;
+  margin-top: 0.55rem;
   font-size: 0.95rem;
   font-weight: 600;
+  letter-spacing: 0;
   color: var(--text-muted);
+  line-height: 1.3;
 }
 
 .pricing-card .feature-list {
-  flex: 1;
+  flex: none;
   margin-top: 0.35rem;
+}
+
+.pricing-card .feature-list li {
+  padding-top: 0.42rem;
+  padding-bottom: 0.42rem;
+  font-size: 0.95rem;
+  line-height: 1.45;
+  color: var(--text);
 }
 
 .pricing-card .cta-button {
@@ -1456,12 +1494,24 @@ img {
   margin-bottom: 0.15rem;
 }
 
-@media (min-width: 960px) {
+@media (min-width: 780px) and (max-width: 1099px) {
+  .pricing-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.35rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .pricing-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.75rem 1.35rem;
+  }
+
   .pricing-grid--lead {
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 
-  .pricing-grid--lead > .pricing-card:nth-child(-n + 3) {
+  .pricing-grid--lead > .pricing-card {
     grid-column: span 2;
   }
 
@@ -1517,17 +1567,18 @@ img {
 }
 
 .plan-annual {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   color: var(--text-muted);
-  margin: -0.5rem 0 0.75rem;
+  margin: 0.45rem 0 0;
 }
 
 .plan-split {
-  font-size: 0.8rem;
-  color: var(--text-muted);
-  margin-bottom: 1rem;
-  padding-bottom: 0.85rem;
+  font-size: 0.98rem;
+  color: var(--text);
+  margin: 0.85rem 0 0.15rem;
+  padding-bottom: 1rem;
   border-bottom: 1px solid var(--cream-dark);
+  line-height: 1.45;
 }
 
 /* Stats */
@@ -2522,7 +2573,7 @@ img {
   }
 
   .pricing-price {
-    font-size: 1.75rem;
+    font-size: 2.15rem;
   }
 
   .stat-item h2 {
