@@ -33,15 +33,15 @@
     usd: '/pricing/usd/',
   };
   var COPY = {
-    aed: { place: 'the UAE', circle: 'AED 69', kicker: 'For Tahfiz institutes in the UAE' },
-    sar: { place: 'Saudi Arabia', circle: 'SAR 75', kicker: 'For Tahfiz institutes in Saudi Arabia' },
-    qar: { place: 'Qatar', circle: 'QAR 69', kicker: 'For Tahfiz institutes in Qatar' },
-    kwd: { place: 'Kuwait', circle: 'KWD 6', kicker: 'For Tahfiz institutes in Kuwait' },
-    bhd: { place: 'Bahrain', circle: 'BHD 7', kicker: 'For Tahfiz institutes in Bahrain' },
-    omr: { place: 'Oman', circle: 'OMR 7', kicker: 'For Tahfiz institutes in Oman' },
-    gbp: { place: 'the United Kingdom', circle: '£15', kicker: 'For Tahfiz institutes in the United Kingdom' },
-    inr: { place: 'India', circle: '₹499', kicker: 'For Tahfiz institutes in India' },
-    usd: { place: 'your country', circle: '$19', kicker: 'For Tahfiz institutes' },
+    aed: { place: 'the UAE', circle: 'AED 4', kicker: 'For Tahfiz institutes in the UAE' },
+    sar: { place: 'Saudi Arabia', circle: 'SAR 4', kicker: 'For Tahfiz institutes in Saudi Arabia' },
+    qar: { place: 'Qatar', circle: 'QAR 4', kicker: 'For Tahfiz institutes in Qatar' },
+    kwd: { place: 'Kuwait', circle: 'KWD 0.300', kicker: 'For Tahfiz institutes in Kuwait' },
+    bhd: { place: 'Bahrain', circle: 'BHD 0.400', kicker: 'For Tahfiz institutes in Bahrain' },
+    omr: { place: 'Oman', circle: 'OMR 0.400', kicker: 'For Tahfiz institutes in Oman' },
+    gbp: { place: 'the United Kingdom', circle: '£1', kicker: 'For Tahfiz institutes in the United Kingdom' },
+    inr: { place: 'India', circle: '₹50', kicker: 'For Tahfiz institutes in India' },
+    usd: { place: 'your country', circle: '$1', kicker: 'For Tahfiz institutes' },
   };
 
   function saved() {
@@ -77,9 +77,9 @@
     var lead = document.getElementById('homePricingLead');
     if (lead) {
       lead.textContent =
-        'Halaqa is the free desk for 30 students. Scored practice starts on Circle at ' +
+        'Halaqa is a 30-day trial for 10 students. Circle is ' +
         info.circle +
-        ' a month for institutes in ' +
+        ' per active student each month for institutes in ' +
         info.place +
         '.';
     }
