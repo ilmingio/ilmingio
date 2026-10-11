@@ -52,11 +52,14 @@ CSS: `assets/css/site.css`
 After copy or nav changes:
 
 ```bash
+python3 scripts/build-og-images.py
 python3 scripts/sync-seo.py
 python3 scripts/sync-layout.py
 ```
 
-Submit `https://ilming.io/sitemap.xml` in [Google Search Console](https://search.google.com/search-console) after deploy.
+`sync-seo.py` refreshes canonical, Open Graph, Twitter, and JSON-LD, keeps each page's FAQ markup, and rewrites `sitemap.xml` with pricing hreflang. `x-default` is the international dollar page.
+
+Submit `https://www.ilming.io/sitemap.xml` in [Google Search Console](https://search.google.com/search-console) after deploy.
 
 ## Deploy
 

@@ -155,7 +155,7 @@ def header_block(ap: str, noscript: bool) -> str:
 
 def footer_block(ap: str, compact_cta: bool) -> str:
     cta_title = "Questions about your institute?" if compact_cta else "Ready to modernise your institute?"
-    cta_sub = "A free 30-day pilot for one Hifz batch. We set up the institute, import students, and train teachers."
+    cta_sub = "A 30-day trial for 10 students. We set up the institute, import students, and train teachers."
     return f"""    <footer class="site-footer">
       <div class="footer-cta">
         <div class="container footer-cta__inner">

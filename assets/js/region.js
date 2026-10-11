@@ -33,15 +33,15 @@
     usd: '/pricing/usd/',
   };
   var COPY = {
-    aed: { place: 'the UAE', circle: 'AED 4', kicker: 'For Tahfiz institutes in the UAE' },
-    sar: { place: 'Saudi Arabia', circle: 'SAR 4', kicker: 'For Tahfiz institutes in Saudi Arabia' },
-    qar: { place: 'Qatar', circle: 'QAR 4', kicker: 'For Tahfiz institutes in Qatar' },
-    kwd: { place: 'Kuwait', circle: 'KWD 0.300', kicker: 'For Tahfiz institutes in Kuwait' },
-    bhd: { place: 'Bahrain', circle: 'BHD 0.400', kicker: 'For Tahfiz institutes in Bahrain' },
-    omr: { place: 'Oman', circle: 'OMR 0.400', kicker: 'For Tahfiz institutes in Oman' },
-    gbp: { place: 'the United Kingdom', circle: '£1', kicker: 'For Tahfiz institutes in the United Kingdom' },
-    inr: { place: 'India', circle: '₹50', kicker: 'For Tahfiz institutes in India' },
-    usd: { place: 'your country', circle: '$1', kicker: 'For Tahfiz institutes' },
+    aed: { place: 'the UAE', here: 'UAE', circle: 'AED 4', kicker: 'For Tahfiz institutes in the UAE' },
+    sar: { place: 'Saudi Arabia', here: 'Saudi Arabia', circle: 'SAR 4', kicker: 'For Tahfiz institutes in Saudi Arabia' },
+    qar: { place: 'Qatar', here: 'Qatar', circle: 'QAR 4', kicker: 'For Tahfiz institutes in Qatar' },
+    kwd: { place: 'Kuwait', here: 'Kuwait', circle: 'KWD 0.300', kicker: 'For Tahfiz institutes in Kuwait' },
+    bhd: { place: 'Bahrain', here: 'Bahrain', circle: 'BHD 0.400', kicker: 'For Tahfiz institutes in Bahrain' },
+    omr: { place: 'Oman', here: 'Oman', circle: 'OMR 0.400', kicker: 'For Tahfiz institutes in Oman' },
+    gbp: { place: 'the United Kingdom', here: 'United Kingdom', circle: '£1', kicker: 'For Tahfiz institutes in the United Kingdom' },
+    inr: { place: 'India', here: 'India', circle: '₹50', kicker: 'For Tahfiz institutes in India' },
+    usd: { place: 'your country', here: 'international', circle: '$1', kicker: 'For Tahfiz institutes' },
   };
 
   function saved() {
@@ -92,6 +92,38 @@
     if (kicker) kicker.textContent = info.kicker;
   }
 
+  function suggest(region) {
+    var here = currentRegion();
+    if (!here || !region || region === here || !PATH[region]) return;
+    var info = COPY[region];
+    var current = COPY[here];
+    var nav = document.querySelector('.currency-switch');
+    if (!nav || !info || !current) return;
+    var note = document.getElementById('regionSuggest');
+    if (!note) {
+      note = document.createElement('p');
+      note.id = 'regionSuggest';
+      note.className = 'region-suggest';
+      nav.insertAdjacentElement('afterend', note);
+    }
+    note.textContent = '';
+    note.appendChild(document.createTextNode('This page shows ' + current.here + ' prices. '));
+    var link = document.createElement('a');
+    link.href = PATH[region];
+    link.textContent = region === 'usd' ? 'View international pricing' : 'View pricing for ' + info.place;
+    note.appendChild(link);
+    note.appendChild(document.createTextNode('.'));
+  }
+
+  if (!document.getElementById('regionSuggestStyle')) {
+    var style = document.createElement('style');
+    style.id = 'regionSuggestStyle';
+    style.textContent =
+      '.region-suggest{margin:0.85rem auto 0;max-width:40rem;font-size:0.95rem;line-height:1.45;color:#3d4f49}' +
+      '.region-suggest a{color:#0a6b5c;font-weight:600}';
+    document.head.appendChild(style);
+  }
+
   document.querySelectorAll('[data-region]').forEach(function (el) {
     el.addEventListener('click', function () {
       try {
@@ -102,13 +134,17 @@
 
   var choice = saved();
   var here = currentRegion();
-  var guess = choice || tzRegion() || (here || 'usd');
+  var tz = tzRegion();
+  var guess = choice || tz || (here || 'usd');
   apply(guess);
+  document.documentElement.classList.remove('region-pending');
 
   if (choice) {
-    document.documentElement.classList.remove('region-pending');
+    suggest(choice);
     return;
   }
+
+  if (tz) suggest(tz);
 
   fetch('https://get.geojs.io/v1/ip/country.json')
     .then(function (response) {
@@ -116,18 +152,16 @@
     })
     .then(function (data) {
       var region = COUNTRY[(data.country || '').toUpperCase()] || '';
+      document.documentElement.classList.remove('region-pending');
       if (!region) {
-        if (!tzRegion() && here === 'inr') location.replace(PATH.usd);
-        document.documentElement.classList.remove('region-pending');
-        if (!tzRegion()) apply('usd');
+        if (!tz && !here) apply('usd');
         return;
       }
-      apply(region);
-      if (here === 'inr' && region !== 'inr') location.replace(PATH[region]);
-      else document.documentElement.classList.remove('region-pending');
+      if (!choice) apply(region);
+      suggest(region);
     })
     .catch(function () {
       document.documentElement.classList.remove('region-pending');
-      if (!tzRegion() && !here) apply('usd');
+      if (!tz && !here) apply('usd');
     });
 })();
