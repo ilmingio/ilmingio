@@ -214,10 +214,10 @@
     const messageInput = document.getElementById('message');
     if (intentInput) intentInput.value = intent;
     if (messageInput && !messageInput.value && intent === 'batch') {
-      messageInput.value = 'Please set up one Hifz batch for our institute.';
+      messageInput.value = 'Please set up a 30-day trial for 10 students at our institute.';
     }
     if (messageInput && !messageInput.value && intent === 'demo') {
-      messageInput.value = 'I would like a free demo and a 30-day pilot for one Hifz batch.';
+      messageInput.value = 'I would like a free demo and a 30-day trial for 10 students.';
     }
 
     contactForm.addEventListener('submit', function (e) {
@@ -227,8 +227,8 @@
       const teachers = String(fd.get('teachers') || '').trim();
       const requestIntent = String(fd.get('intent') || '').trim();
       const notes = [];
-      if (requestIntent === 'batch') notes.push('Request: set up one Hifz batch');
-      if (requestIntent === 'demo') notes.push('Request: free demo and 30-day pilot');
+      if (requestIntent === 'batch') notes.push('Request: 30-day trial for 10 students');
+      if (requestIntent === 'demo') notes.push('Request: free demo and 30-day trial for 10 students');
       if (students) notes.push('Students: ' + students);
       if (teachers) notes.push('Teachers: ' + teachers);
       let message = String(fd.get('message') || '').trim();

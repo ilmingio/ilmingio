@@ -9,3 +9,7 @@
 /nonacademic* /    301
 /login        https://app.ilming.io/login    302
 /login/       https://app.ilming.io/login    302
+/demo-platform    /present/    301
+/demo-platform/   /present/    301
+/docs/*           /present/    301
+/ilming.mp4       /present/    301

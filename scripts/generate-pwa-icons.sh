@@ -12,7 +12,6 @@ render() {
 render 512 "$OUT/icon-512.png"
 render 192 "$OUT/icon-192.png"
 render 180 "$OUT/apple-touch-icon.png"
-render 96  "$OUT/favicon-96x96.png"
 render 32  "$OUT/favicon-32x32.png"
 render 16  "$OUT/favicon-16x16.png"
 

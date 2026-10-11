@@ -9,6 +9,26 @@
       "source": "/login/",
       "destination": "https://app.ilming.io/login",
       "permanent": false
+    },
+    {
+      "source": "/demo-platform",
+      "destination": "/present/",
+      "permanent": true
+    },
+    {
+      "source": "/demo-platform/",
+      "destination": "/present/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/:path*",
+      "destination": "/present/",
+      "permanent": true
+    },
+    {
+      "source": "/ilming.mp4",
+      "destination": "/present/",
+      "permanent": true
     }
   ]
 }

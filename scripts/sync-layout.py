@@ -5,6 +5,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 CSS_VER = "20261006"
+JS_VER = "20261011"
 SW_VER = "20260815"
 
 PAGES = [
@@ -206,7 +207,6 @@ def footer_block(ap: str, compact_cta: bool) -> str:
               <li><a href="/ai/">AI Hafazan teacher</a></li>
               <li><a href="/tahfiz-management-software/">Tahfiz management</a></li>
               <li><a href="/present/">Product tour</a></li>
-              <li><a href="/demo-platform/">Demo guide</a></li>
               <li><a href="/pricing/">Pricing</a></li>
               <li><a href="/login" data-app-link="/login">Log in</a></li>
             </ul>
@@ -250,7 +250,7 @@ def scripts_block(ap: str, analytics: bool = True) -> str:
     jp = js_prefix(ap)
     lines = [
         f'    <script src="{jp}config.js"></script>',
-        f'    <script src="{jp}site.js?v={CSS_VER}"></script>',
+        f'    <script src="{jp}site.js?v={JS_VER}"></script>',
     ]
     if analytics:
         lines.append(f'    <script src="{jp}analytics.js"></script>')

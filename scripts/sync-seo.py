@@ -685,7 +685,7 @@ def sync_file(rel: str, cfg: dict) -> None:
 def update_robots() -> None:
     content = """User-agent: *
 Allow: /
-Disallow: /demo-platform/
+Disallow: /scripts/
 
 Sitemap: https://www.ilming.io/sitemap.xml
 """

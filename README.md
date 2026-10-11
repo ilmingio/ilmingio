@@ -16,8 +16,6 @@ Static marketing website for **ilming** — an Islamic Learning Management Syste
 | `/about/` | Vision and purpose |
 | `/contact/` | Demo / contact form |
 | `/present/` | 10-minute product tour |
-| `/demo-platform/` | Internal demo guide (noindex) |
-| `/docs/proposal-ai-cost/` | Internal proposal brief: Whisper / OpenAI cost (noindex) |
 | `/privacy-policy/` | Privacy, including recitation audio |
 | `/terms-and-conditions/` | Terms |
 | `/security/` | Security practices |
@@ -63,6 +61,6 @@ Submit `https://www.ilming.io/sitemap.xml` in [Google Search Console](https://se
 
 ## Deploy
 
-Publish this folder root to ilming.io (Netlify / Cloudflare Pages). `_redirects` and `_headers` are picked up automatically.
+Publish this folder root to ilming.io (Netlify / Cloudflare Pages). `_redirects` and `_headers` are picked up automatically. Retired internal URLs (`/demo-platform/`, `/docs/`, `/ilming.mp4`) redirect to the product tour.
 
 LMS app: `app.ilming.io` · API: `api.ilming.io`

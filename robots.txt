@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
-Disallow: /demo-platform/
+Disallow: /scripts/
 
 Sitemap: https://www.ilming.io/sitemap.xml
