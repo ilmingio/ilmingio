@@ -1,4 +1,4 @@
-/** Deferred Google Tag Manager + GA (from legacy ilming.io setup) */
+/** Deferred Google Tag Manager + GA4 for the ilmingio property. */
 window.addEventListener('load', function () {
   (function (w, d, s, l, i) {
     w[l] = w[l] || [];
@@ -13,7 +13,7 @@ window.addEventListener('load', function () {
 
   var ga = document.createElement('script');
   ga.async = true;
-  ga.src = 'https://www.googletagmanager.com/gtag/js?id=G-L9XCLHBPMR';
+  ga.src = 'https://www.googletagmanager.com/gtag/js?id=G-J3T34GV2KZ';
   document.head.appendChild(ga);
   window.dataLayer = window.dataLayer || [];
   function gtag() {
@@ -21,5 +21,5 @@ window.addEventListener('load', function () {
   }
   window.gtag = gtag;
   gtag('js', new Date());
-  gtag('config', 'G-L9XCLHBPMR');
+  gtag('config', 'G-J3T34GV2KZ');
 });

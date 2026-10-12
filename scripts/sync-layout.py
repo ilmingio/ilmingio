@@ -5,7 +5,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 CSS_VER = "20261006"
-JS_VER = "20261011"
+JS_VER = "20261012"
 SW_VER = "20260815"
 
 PAGES = [
@@ -253,7 +253,7 @@ def scripts_block(ap: str, analytics: bool = True) -> str:
         f'    <script src="{jp}site.js?v={JS_VER}"></script>',
     ]
     if analytics:
-        lines.append(f'    <script src="{jp}analytics.js"></script>')
+        lines.append(f'    <script src="{jp}analytics.js?v={JS_VER}"></script>')
     return "\n".join(lines)
 
 
